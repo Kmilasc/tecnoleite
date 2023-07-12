@@ -155,7 +155,7 @@ export default function Home() {
             leaveFrom="opacity-100 scale-100"
             leaveTo="opacity-0 scale-95"
           >
-            <Popover.Panel focus className="absolute top-0 inset-x-0 p-2 transition transform origin-top md:hidden">
+            <Popover.Panel focus className="absolute top-0 inset-x-0 p-2 transition transform origin-top z-10 md:hidden">
               <div className="p-4 rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
                 <div className="pt-4 flex items-center justify-between">
                   <div>
@@ -191,7 +191,7 @@ export default function Home() {
         </Popover>
 
         <main className=" w-full flex flex-col">
-  <div className="relative">
+        <div className="relative">
    <div>
    <img className='brightness-50 w-full pr-0 mb-14 mr-0' src={bgHome} alt="" />
     <div
