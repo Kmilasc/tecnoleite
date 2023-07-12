@@ -106,14 +106,6 @@ const footer = {
 export default function Home() {
   return (
     <div className='w-full'>
-      {/*
-        This example requires updating your template:
-
-        ```
-        <html class="h-full">
-        <body class="h-full">
-        ```
-      */}
       <div className="min-h-full flex flex-col">
         <Popover className="relative bg-white">
           <div className="w-full">
@@ -145,7 +137,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-
           <Transition
             as={Fragment}
             enter="duration-150 ease-out"
