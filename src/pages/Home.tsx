@@ -5,6 +5,7 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import logo from '../assets/logo.png';
 import bgHome from '../assets/bgHome.png';
 import sobre from '../assets/sobre.png';
+import { SpeakerPresentation } from '../components/SpeakerPresentation';
 
 const navigation = [
     { name: 'Inicio', href: '#' },
@@ -192,131 +193,57 @@ export default function Home() {
                         </div>
                     </div>
                     <div className="flex">
-                        <div className="flex">
-                            <div className="flex-1 ml-28 mr-4  w-full text-2xl xs:text-4xl sm:text-6xl font-conforter text-black font-bold border-spacing-1">
-                                <span className="border-b-4 border-green-600 ">Sobre</span>
-                                <p className="text-xl font-normal mt-8 flex-1" style={{ height: 500, width: 500 }}>
-                                    Texto texto texto texto texo texto texto texto texto texto texto texo texto texto
-                                    texto texto texto texto texo texto texto texto texto texto texto texto texo texto
-                                    texto texto texto texto texto texo texto texto texto texto texto texo texto texto
-                                    texto texto texto texto texo texto texto texto texto texto texto texo texto texto
-                                    texto Texto texto texto texto texo texto texto texto texto texto texto texo texto
-                                    texto texto texto texto texto texo texto texto texto texto texto texto texto texo
-                                    texto texto texto texto texto texto texo texto texto texto texto texto texo texto
-                                    texto texto texto texto texto texo texto texto texto texto texto texto
-                                </p>
-                            </div>
+                        <div className="flex-1 ml-28 mr-4  w-full text-2xl xs:text-4xl sm:text-6xl font-conforter text-black font-bold border-spacing-1">
+                            <span className="border-b-4 border-green-600 ">SOBRE</span>
+                            <p className="text-xl font-normal mt-8 flex-1" style={{ height: 500, width: 500 }}>
+                                Texto texto texto texto texo texto texto texto texto texto texto texo texto texto texto
+                                texto texto texto texo texto texto texto texto texto texto texto texo texto texto texto
+                                texto texto texto texo texto texto texto texto texto texo texto texto texto texto texto
+                                texto texo texto texto texto texto texto texto texo texto texto texto Texto texto texto
+                                texto texo texto texto texto texto texto texto texo texto texto texto texto texto texto
+                                texo texto texto texto texto texto texto texto texo texto texto texto texto texto texto
+                                texo texto texto texto texto texto texo texto texto texto texto texto texto texo texto
+                                texto texto texto texto texto
+                            </p>
                         </div>
                         <img className="flex-1 float-right mr-28 ml-4 w-96 h-96 drop-shadow-lg" src={sobre} alt="" />
                     </div>
-                </main>
-                <footer className="bg-gray-50" aria-labelledby="footer-heading">
-                    <h2 id="footer-heading" className="sr-only">
-                        Footer
-                    </h2>
-                    <div className="w-full ">
-                        <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-                            <div className="space-y-8 xl:col-span-1 ml-5">
-                                <img
-                                    className="h-10 ml-3s"
-                                    src="https://tailwindui.com/img/logos/workflow-mark-gray-300.svg"
-                                    alt="Company name"
-                                />
-                                <p className="text-gray-500 text-base">
-                                    Making the world a better place through constructing elegant hierarchies.
-                                </p>
-                                <div className="flex space-x-6">
-                                    {footer.social.map(item => (
-                                        <a
-                                            key={item.name}
-                                            href={item.href}
-                                            className="text-gray-400 hover:text-gray-500"
-                                        >
-                                            <span className="sr-only">{item.name}</span>
-                                            <item.icon className="h-6 w-6" aria-hidden="true" />
-                                        </a>
-                                    ))}
-                                </div>
-                            </div>
-                            <div className="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
-                                <div className="md:grid md:grid-cols-2 md:gap-8">
-                                    <div>
-                                        <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-                                            Solutions
-                                        </h3>
-                                        <ul role="list" className="mt-4 space-y-4">
-                                            {footer.solutions.map(item => (
-                                                <li key={item.name}>
-                                                    <a
-                                                        href={item.href}
-                                                        className="text-base text-gray-500 hover:text-gray-900"
-                                                    >
-                                                        {item.name}
-                                                    </a>
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </div>
-                                    <div className="mt-12 md:mt-0">
-                                        <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-                                            Support
-                                        </h3>
-                                        <ul role="list" className="mt-4 space-y-4">
-                                            {footer.support.map(item => (
-                                                <li key={item.name}>
-                                                    <a
-                                                        href={item.href}
-                                                        className="text-base text-gray-500 hover:text-gray-900"
-                                                    >
-                                                        {item.name}
-                                                    </a>
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div className="md:grid md:grid-cols-2 md:gap-8">
-                                    <div>
-                                        <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-                                            Company
-                                        </h3>
-                                        <ul role="list" className="mt-4 space-y-4">
-                                            {footer.company.map(item => (
-                                                <li key={item.name}>
-                                                    <a
-                                                        href={item.href}
-                                                        className="text-base text-gray-500 hover:text-gray-900"
-                                                    >
-                                                        {item.name}
-                                                    </a>
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </div>
-                                    <div className="mt-12 md:mt-0">
-                                        <h3 className="text-sm font-semibold text-gray-400 tracking-wider uppercase">
-                                            Legal
-                                        </h3>
-                                        <ul role="list" className="mt-4 space-y-4">
-                                            {footer.legal.map(item => (
-                                                <li key={item.name}>
-                                                    <a
-                                                        href={item.href}
-                                                        className="text-base text-gray-500 hover:text-gray-900"
-                                                    >
-                                                        {item.name}
-                                                    </a>
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
+                    <div className="flex flex-col">
+                        <div className="self-center pb-8">
+                            <span className="text-2xl xs:text-4xl sm:text-6xl font-conforter text-black font-bold border-spacing-1 border-b-4 border-green-600 ">
+                                CRONOGRAMA
+                            </span>
                         </div>
-                        <div className="mt-12 border-t border-gray-200 pt-8">
-                            <p className="text-base text-gray-400 xl:text-center">
-                                &copy; 2020 Workflow, Inc. All rights reserved.
-                            </p>
+                        <div className="flex flex-row gap-x-4 mx-8" />
+                    </div>
+                    <div className="flex flex-col">
+                        <div className="self-center pb-8">
+                            <span className="text-2xl xs:text-4xl sm:text-6xl font-conforter text-black font-bold border-spacing-1 border-b-4 border-green-600 ">
+                                EQUIPE
+                            </span>
+                        </div>
+                        <div className="flex flex-row gap-x-4 mx-8">
+                            <SpeakerPresentation />
+                            <SpeakerPresentation />
+                            <SpeakerPresentation />
+                            <SpeakerPresentation />
+                        </div>
+                    </div>
+                </main>
+                <footer className="bg-gray-50 mt-12" aria-labelledby="footer-heading">
+                    <div className="w-full">
+                        <div className="border-t border-gray-200 py-8">
+                            <nav className="flex space-x-5 justify-center">
+                                {navigation.map((item, itemIdx) => (
+                                    <a
+                                        key={itemIdx}
+                                        href={item.href}
+                                        className="text-base font-medium text-gray-500 hover:text-gray-900"
+                                    >
+                                        {item.name}
+                                    </a>
+                                ))}
+                            </nav>
                         </div>
                     </div>
                 </footer>
