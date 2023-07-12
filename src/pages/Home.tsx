@@ -156,12 +156,12 @@ export default function Home() {
             leaveTo="opacity-0 scale-95"
           >
             <Popover.Panel focus className="absolute top-0 inset-x-0 p-2 transition transform origin-top md:hidden">
-              <div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
-                <div className=" pt-4 flex items-center justify-between">
+              <div className="p-4 rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
+                <div className="pt-4 flex items-center justify-between">
                   <div>
                     <img
                       className="h-8 w-auto"
-                      src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                      src={logo}
                       alt=""
                     />
                   </div>
@@ -183,22 +183,6 @@ export default function Home() {
                         {item.name}
                       </a>
                     ))}
-                  </div>
-                  <div className="mt-6">
-                    <a
-                      href="#"
-                      className="block text-center w-full py-3  rounded-md shadow bg-indigo-600 text-white font-medium hover:bg-indigo-700"
-                    >
-                      Sign up
-                    </a>
-                  </div>
-                  <div className="mt-6 ">
-                    <p className="text-center text-base font-medium text-gray-500">
-                      Existing customer?{' '}
-                      <a href="#" className="text-gray-900 hover:underline">
-                        Sign in
-                      </a>
-                    </p>
                   </div>
                 </div>
               </div>
