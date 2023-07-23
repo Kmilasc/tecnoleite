@@ -1,8 +1,8 @@
 export function SpeakerPresentation() {
     return (
-        <div className="flex flex-col items-center gap-y-8">
+        <div className="mt-20 flex flex-col items-center gap-y-8">
             <div className="flex flex-col items-center">
-                <span className="text-md xs:text-xl sm:text-2xl font-conforter text-black font-bold border-spacing-1 border-b-4 border-green-600 ">
+                <span className="text-md xs:text-xl sm:text-2xl font-conforter text-black font-bold border-spacing-1 border-b-4 " style={{borderColor: '#308E96' }}>
                     Jack Hendrix
                 </span>
                 <p className="text-sm xs:text-md sm:text-xl text-gray-400">Palestrante 1</p>

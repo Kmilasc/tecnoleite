@@ -6,7 +6,7 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import resolveConfig from 'tailwindcss/resolveConfig';
 import tailwindConfig from '../../tailwind.config.js';
 
-import logo from '../assets/logo.png';
+import logo from '../assets/logo.jpg';
 import bgHome from '../assets/bgHome.png';
 import sobre from '../assets/sobre.png';
 import { SpeakerPresentation } from '../components/SpeakerPresentation';
@@ -30,14 +30,18 @@ const events = [
 export default function Home() {
     return (
         <div className="w-full">
-            <div className="min-h-full flex flex-col">
-                <Popover className="relative bg-white">
+            <div className="min-h-full bg-white flex flex-col">
+                <Popover className="relative " 
+                // style={{ backgroundColor: '#308E96' }}
+                // style={{ backgroundColor: '#606062' }}
+                // style={{ backgroundColor: '#2C5274' }}
+                >
                     <div className="w-full">
                         <div className="flex justify-between items-center md:justify-start md:space-x-10 mb-2 mt-5">
                             <div className="flex justify-start lg:w-0 lg:flex-1">
                                 <a href="#">
                                     <span className="sr-only">Workflow</span>
-                                    <img className="place-items-center h-20 w-20 ml-5" src={logo} alt="" />
+                                    <img className="place-items-center h-16 w-56 ml-5" src={logo} alt="" />
                                 </a>
                             </div>
                             <div className="-mr-2 -my-2 md:hidden">
@@ -73,7 +77,7 @@ export default function Home() {
                             focus
                             className="absolute top-0 inset-x-0 p-2 transition transform origin-top z-10 md:hidden"
                         >
-                            <div className="p-4 rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
+                                <div className="p-4 rounded-lg shadow-md ring-1 bg-white ring-black ring-opacity-5 overflow-hidden" >
                                 <div className="pt-4 flex items-center justify-between">
                                     <div>
                                         <img className="h-8 w-auto" src={logo} alt="" />
@@ -105,7 +109,7 @@ export default function Home() {
                 <main className=" w-full flex flex-col">
                     <div className="relative">
                         <div>
-                            <img className="brightness-50 w-full pr-0 mb-14 mr-0" src={bgHome} alt="" />
+                            <img className="brightness-50 w-full pr-0  mr-0" src={bgHome} alt="" />
                             <div className="w-full text-2xl xs:text-4xl sm:text-6xl text-center font-conforter absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-extrabold border-spacing-1  p-4">
                                 3º Tecnoleite
                                 <br />
@@ -116,10 +120,12 @@ export default function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className="flex">
+                    <div className="flex mt-14">
                         <div className="flex-1 ml-28 mr-4  w-full text-2xl xs:text-4xl sm:text-6xl font-conforter text-black font-bold border-spacing-1">
-                            <span className="border-b-4 border-green-600 ">SOBRE</span>
-                            <p className="text-xl font-normal mt-8 flex-1" style={{ height: 500, width: 500 }}>
+                            <span className="border-b-4" style={{borderColor: '#308E96' }}
+                            
+                            >SOBRE</span>
+                            <p className="text-xl font-normal mt-14 flex-1" style={{ height: 500, width: 500 }}>
                                 Texto texto texto texto texo texto texto texto texto texto texto texo texto texto texto
                                 texto texto texto texo texto texto texto texto texto texto texto texo texto texto texto
                                 texto texto texto texo texto texto texto texto texto texo texto texto texto texto texto
@@ -127,41 +133,42 @@ export default function Home() {
                                 texto texo texto texto texto texto texto texto texo texto texto texto texto texto texto
                                 texo texto texto texto texto texto texto texto texo texto texto texto texto texto texto
                                 texo texto texto texto texto texto texo texto texto texto texto texto texto texo texto
-                                texto texto texto texto texto
+                      
                             </p>
                         </div>
                         <img className="flex-1 float-right mr-28 ml-4 w-96 h-96 drop-shadow-lg" src={sobre} alt="" />
                     </div>
                     <div className="flex flex-col">
                         <div className="self-center pb-8">
-                            <span className="text-2xl xs:text-4xl sm:text-6xl font-conforter text-black font-bold border-spacing-1 border-b-4 border-green-600 ">
+                            <span className="text-2xl xs:text-4xl sm:text-6xl font-conforter text-black font-bold border-spacing-1 border-b-4 " style={{borderColor: '#308E96' }}>
                                 CRONOGRAMA
                             </span>
                         </div>
                         <div className="flex flex-row gap-x-4 mx-8">
-                            <VerticalTimeline lineColor={fullConfig.theme.colors.green['500']}>
-                                {events.map((event, index) => (
-                                    <VerticalTimelineElement
-                                        key={index}
-                                        className="vertical-timeline-element--work"
-                                        date={event.date}
-                                        iconStyle={{
-                                            background: fullConfig.theme.colors.green['500'],
-                                            color: fullConfig.theme.colors.white,
-                                        }}
-                                        icon={<ClockIcon />}
-                                        contentStyle={{ background: fullConfig.theme.colors.gray['100'] }}
-                                    >
-                                        <h3 className="vertical-timeline-element-title">{event.date}</h3>
-                                        <p>{event.text}</p>
-                                    </VerticalTimelineElement>
-                                ))}
-                            </VerticalTimeline>
-                        </div>
+  <VerticalTimeline lineColor="#308E96">
+    {events.map((event, index) => (
+      <VerticalTimelineElement
+        key={index}
+        className="vertical-timeline-element--work"
+        date={event.date}
+        iconStyle={{
+          background: '#308E96', // Alteração da cor do ícone
+          color: fullConfig.theme.colors.white,
+        }}
+        icon={<ClockIcon />}
+        contentStyle={{ background: fullConfig.theme.colors.gray['100'] }}
+      >
+        <h3 className="vertical-timeline-element-title">{event.date}</h3>
+        <p>{event.text}</p>
+      </VerticalTimelineElement>
+    ))}
+  </VerticalTimeline>
+</div>
+
                     </div>
                     <div className="flex flex-col">
                         <div className="self-center pb-8">
-                            <span className="text-2xl xs:text-4xl sm:text-6xl font-conforter text-black font-bold border-spacing-1 border-b-4 border-green-600 ">
+                            <span className="text-2xl xs:text-4xl sm:text-6xl font-conforter text-black font-bold border-spacing-1 border-b-4  " style={{borderColor: '#308E96' }}>
                                 EQUIPE
                             </span>
                         </div>
