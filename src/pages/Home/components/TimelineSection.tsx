@@ -10,7 +10,7 @@ interface Props {
 export function TimelineSection({ events, lineColor }: Props) {
     return (
         <div className="flex flex-col">
-            <div className="self-center pb-8">
+            <div id='programacao' className="self-center pb-8">
                 <span className="text-2xl xs:text-4xl sm:text-6xl font-conforter text-black font-bold border-spacing-1 border-b-4 " style={{borderColor: '#308E96' }}>
                     CRONOGRAMA
                 </span>

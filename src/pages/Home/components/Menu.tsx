@@ -6,10 +6,10 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import logo from '../../../assets/logo.jpg';
 
 const navigation = [
-    { name: 'Inicio', href: '#' },
-    { name: 'Sobre', href: '#' },
-    { name: 'Programação', href: '#' },
-    { name: 'Equipe', href: '#' },
+    { name: 'Inicio', href: '#inicio' },
+    { name: 'Sobre', href: '#about-section' },
+    { name: 'Cronograma', href: '#programacao' },
+    { name: 'Equipe', href: '#equipe' },
 ];
 
 export function Menu() {

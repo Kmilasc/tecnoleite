@@ -1,13 +1,13 @@
 const navigation = [
-    { name: 'Inicio', href: '#' },
-    { name: 'Sobre', href: '#' },
-    { name: 'Programação', href: '#' },
-    { name: 'Equipe', href: '#' },
+    { name: 'Inicio', href: '#inicio' },
+    { name: 'Sobre', href: '#about-section' },
+    { name: 'Cronograma', href: '#programacao' },
+    { name: 'Equipe', href: '#equipe' },
 ];
 
 export function Footer() {
     return (
-        <footer className="bg-gray-50 mt-12" aria-labelledby="footer-heading">
+        <footer className=" bg-gray-50 mt-12" aria-labelledby="footer-heading">
             <div className="w-full">
                 <div className="border-t border-gray-200 py-8">
                     <nav className="flex space-x-5 justify-center">

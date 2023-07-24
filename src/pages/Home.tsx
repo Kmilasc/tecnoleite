@@ -56,11 +56,13 @@ export default function Home() {
             <div className="min-h-full flex flex-col">
                 <Menu />
                 <header>
+                    
                     <EventBanner
                         imageUrl={bgHome}
                         title="3º Tecnoleite"
                         subtitle={`Produção de leite com tecnologia e sustentabilidade ${'\n'} 1 e 2 de Setembro`}
                     />
+                    
                 </header>
                 <main className="w-full flex flex-col px-16 gap-y-12">
                     <AboutSection
