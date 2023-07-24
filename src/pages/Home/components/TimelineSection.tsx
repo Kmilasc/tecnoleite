@@ -11,7 +11,7 @@ export function TimelineSection({ events, lineColor }: Props) {
     return (
         <div className="flex flex-col">
             <div className="self-center pb-8">
-                <span className="text-2xl xs:text-4xl sm:text-6xl font-conforter text-black font-bold border-spacing-1 border-b-4 border-green-600 ">
+                <span className="text-2xl xs:text-4xl sm:text-6xl font-conforter text-black font-bold border-spacing-1 border-b-4 " style={{borderColor: '#308E96' }}>
                     CRONOGRAMA
                 </span>
             </div>
@@ -20,16 +20,17 @@ export function TimelineSection({ events, lineColor }: Props) {
                     {events.map(({ id, date, text }) => (
                         <VerticalTimelineElement
                             key={id}
-                            className="vertical-timeline-element--work"
+                            className="vertical-timeline-element--work c2"
+                            
                             date={date}
                             iconStyle={{
                                 background: lineColor,
                                 color: '#fff',
                             }}
-                            icon={<ClockIcon />}
+                            icon={<ClockIcon  />}
                             contentStyle={{ background: '#f2f2f2' }}
                         >
-                            <h3 className="vertical-timeline-element-title">{date}</h3>
+                            <h3 className="vertical-timeline-element-title" >{date}</h3>
                             <p>{text}</p>
                         </VerticalTimelineElement>
                     ))}

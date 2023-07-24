@@ -11,6 +11,11 @@ export default {
       },
       screens: {
         xs: '360px'
+      },
+      colors: {
+        c1: '#308E96',
+        c2: '#606062',
+        c3: '#2C5274'
       }
     },
   },

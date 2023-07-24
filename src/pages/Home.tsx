@@ -51,6 +51,7 @@ const speakers = [
 
 export default function Home() {
     return (
+        
         <div className="w-full">
             <div className="min-h-full flex flex-col">
                 <Menu />
@@ -74,7 +75,7 @@ export default function Home() {
         texto texto texto texto texto"
                         imageUrl={sobre}
                     />
-                    <TimelineSection events={events} lineColor={fullConfig.theme.colors.green['500']} />
+                    <TimelineSection events={events} lineColor={"#308E96"} />
                     <TeamSection speakers={speakers} />
                 </main>
                 <Footer />
