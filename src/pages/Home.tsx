@@ -2,6 +2,9 @@ import resolveConfig from 'tailwindcss/resolveConfig';
 import tailwindConfig from '../../tailwind.config.js';
 
 import bgHome from '../assets/bgHome.png';
+import logoIfood from '../assets/logoIfood.png'
+import logoAmazon from '../assets/logoAmazon.png'
+import logoNubank from '../assets/logoNubank.jpg'
 import sobre from '../assets/sobre.png';
 import 'react-vertical-timeline-component/style.min.css';
 import { EventBanner } from './Home/components/EventBanner.js';
@@ -68,20 +71,59 @@ export default function Home() {
                     <AboutSection
                         title="SOBRE"
                         text="Texto texto texto texto texo texto texto texto texto texto texto texo texto texto texto
-        texto texto texto texo texto texto texto texto texto texto texto texo texto texto texto
-        texto texto texto texo texto texto texto texto texto texo texto texto texto texto texto
-        texto texo texto texto texto texto texto texto texo texto texto texto Texto texto texto
-        texto texo texto texto texto texto texto texto texo texto texto texto texto texto texto
-        texo texto texto texto texto texto texto texto texo texto texto texto texto texto texto
-        texo texto texto texto texto texto texo texto texto texto texto texto texto texo texto
-        texto texto texto texto texto"
+                        texto texto texto texo texto texto texto texto texto texto texto texo texto texto texto
+                        texto texto texto texo texto texto texto texto texto texo texto texto texto texto texto
+                        texto texo texto texto texto texto texto texto texo texto texto texto Texto texto texto
+                        texto texo texto texto texto texto texto texto texo texto texto texto texto texto texto
+                        texo texto texto texto texto texto texto texto texo texto texto texto texto texto texto
+                        texo texto texto texto texto texto texo texto texto texto texto texto texto texo texto
+                        texto texto texto texto texto"
                         imageUrl={sobre}
                     />
+                    <div className="grid grid-cols-1 xl:grid-cols-2 gap-10">
+                        <div className="flex-1 w-full text-2xl xs:text-4xl sm:text-6xl font-conforter text-black font-bold border-spacing-1 text-center xl:text-start xl:self-center">
+                            <span className="border-b-4" style={{borderColor: '#308E96' }}>Patrocinadores</span>
+                            <div style={{ position: "relative" }}>
+                                <a href="https://www.ifood.com.br/" target="_blank" style={{ display: "inline-block" }}>
+                                    <img className='mt-14 w-40 h-32' src={logoIfood} alt="Logo iFood" />
+                                </a>
+                                <p className="text-xl font-normal mt-8 flex-1">
+                                    Texto texto texto texto texto texto texto texto texto texto texto texto texto texto
+                                    texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto
+                                    texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto
+                                </p>
+                            </div>
+
+                            <div style={{ position: "relative" }}>
+                                <a href="https://www.Amazon.com.br/" target="_blank" style={{ display: "inline-block" }}>
+                                    <img className='mt-14 w-40 h-32' src={logoAmazon} alt="Logo Amazon" />
+                                </a>
+                            </div>
+                            <p className="text-xl font-normal mt-8 flex-1">
+                                Texto texto texto texto texto texto texto texto texto texto texto texto texto texto
+                                texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto
+                                texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto
+                            </p>
+                            <div style={{ position: "relative" }}>
+                                <a href="https://www.Nubank.com.br/" target="_blank" style={{ display: "inline-block" }}>
+                                    <img className='mt-14 w-40 h-32' src={logoNubank} alt="Logo Nubank" />
+                                </a>
+                            </div>
+                            <p className="text-xl font-normal mt-8 flex-1">
+                                Texto texto texto texto texto texto texto texto texto texto texto texto texto texto
+                                texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto
+                                texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto
+                            </p>
+                        </div> 
+                    </div>
+
                     <TimelineSection events={events} lineColor={"#308E96"} />
                     <TeamSection speakers={speakers} />
                 </main>
                 <Footer />
+                
             </div>
+            
         </div>
     );
 }
