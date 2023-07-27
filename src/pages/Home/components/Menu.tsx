@@ -5,11 +5,11 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline';
 
 import logo from '../../../assets/logo.jpg';
 
-const navigation = [
-    { name: 'Inicio', href: '#inicio' },
-    { name: 'Sobre', href: '#about-section' },
-    { name: 'Cronograma', href: '#programacao' },
-    { name: 'Equipe', href: '#equipe' },
+export const navigation = [
+    { name: 'Inicio', href: '#' },
+    { name: 'Sobre', href: '#' },
+    { name: 'Programação', href: '#' },
+    { name: 'Equipe', href: '#' },
 ];
 
 export function Menu() {
@@ -31,11 +31,7 @@ export function Menu() {
                     </div>
                     <nav className="hidden md:flex space-x-10">
                         {navigation.map((item, itemIdx) => (
-                            <a
-                                key={itemIdx}
-                                href={item.href}
-                                className="text-base font-medium text-c2 hover:text-c1"
-                            >
+                            <a key={itemIdx} href={item.href} className="text-base font-medium text-c2 hover:text-c1">
                                 {item.name}
                             </a>
                         ))}
