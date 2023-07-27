@@ -9,6 +9,7 @@ import { Footer } from './Home/components/Footer.js';
 import { TimelineSection } from './Home/components/TimelineSection.js';
 import { TeamSection } from './Home/components/TeamSection/index.js';
 import { SponsorsSection } from './Home/components/SponsorsSection/index.js';
+import { MapSection } from './Home/components/MapSection.js';
 
 const events = [
     { id: 1, date: 'Day 1', text: 'Text bla bla bla bla' },
@@ -74,6 +75,7 @@ export default function Home() {
                     <SponsorsSection />
                     <TimelineSection events={events} lineColor="#308E96" />
                     <TeamSection speakers={speakers} />
+                    <MapSection />
                 </main>
                 <Footer />
             </div>
