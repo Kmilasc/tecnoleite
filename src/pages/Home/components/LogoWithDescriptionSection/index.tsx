@@ -21,13 +21,23 @@ export function LogoWithDescriptionSection({ title, items }: Props) {
             </div>
             <div className="max-w-[1000px]">
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mt-10">
-                    {items.map(({ image, text }) => (
-                        <SponsorPresentation
-                            url="https://www.ifood.com.br/"
-                            logo={image}
-                            alt="Logo iFood"
-                            text={text}
-                        />
+                    {items.map(({ image, text }, i) => (
+                        <div
+                            data-resize={i === items.length - 1 && items.length % 4 === 0}
+                            className="flex md:data-[resize=true]:col-span-3 justify-center"
+                        >
+                            <div
+                                data-resize={i === items.length - 1 && items.length % 4 === 0}
+                                className="md:data-[resize=true]:w-[300px] md:data-[resize=true]:h-[300px] self-center"
+                            >
+                                <SponsorPresentation
+                                    url="https://www.ifood.com.br/"
+                                    logo={image}
+                                    alt="Logo iFood"
+                                    text={text}
+                                />
+                            </div>
+                        </div>
                     ))}
                 </div>
             </div>
