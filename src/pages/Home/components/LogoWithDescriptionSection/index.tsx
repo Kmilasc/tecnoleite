@@ -20,25 +20,18 @@ export function LogoWithDescriptionSection({ title, items }: Props) {
                 </span>
             </div>
             <div className="max-w-[1000px]">
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mt-10">
-                    {items.map(({ image, text }, i) => (
-                        <div
+                <div
+                    data-resize={items.length % 4 === 0}
+                    className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 sm:data-[resize=true]:grid-cols-2 lg:data-[resize=true]:mx-52 gap-10 mt-10"
+                >
+                    {items.map(({ image, text }) => (
+                        <SponsorPresentation
                             key={image}
-                            data-resize={i === items.length - 1 && items.length % 4 === 0}
-                            className="flex md:data-[resize=true]:col-span-3 justify-center"
-                        >
-                            <div
-                                data-resize={i === items.length - 1 && items.length % 4 === 0}
-                                className="md:data-[resize=true]:w-[300px] md:data-[resize=true]:h-[300px] self-center"
-                            >
-                                <SponsorPresentation
-                                    url="https://www.ifood.com.br/"
-                                    logo={image}
-                                    alt="Logo iFood"
-                                    text={text}
-                                />
-                            </div>
-                        </div>
+                            url="https://www.ifood.com.br/"
+                            logo={image}
+                            alt={text}
+                            text={text}
+                        />
                     ))}
                 </div>
             </div>

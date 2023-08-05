@@ -91,7 +91,7 @@ export default function Home() {
                         subtitle={`Produção de leite com tecnologia e sustentabilidade ${'\n'} 1 e 2 de Setembro`}
                     />
                 </header>
-                <main className="w-full flex flex-col px-16 gap-y-12">
+                <main className="w-full flex flex-col px-16 gap-y-32">
                     <AboutSection
                         title="SOBRE"
                         text="Texto texto texto texto texo texto texto texto texto texto texto texo texto texto texto

@@ -14,6 +14,8 @@ export default {
       },
       colors: {
         main: {
+            100:'#edfdff',
+            200: '#ddfcff',
             300: '#3fb9c4',
             400:'#3aaab4',
             500:'#359ca5',
