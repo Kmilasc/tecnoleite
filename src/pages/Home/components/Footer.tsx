@@ -1,4 +1,4 @@
-import { AiFillInstagram, AiFillFacebook } from 'react-icons/ai';
+import { AiFillInstagram } from 'react-icons/ai';
 import { MdEmail, MdLocationOn } from 'react-icons/md';
 import { navigation } from './Menu';
 
@@ -12,35 +12,35 @@ export function Footer() {
                             <h2 className="text-xl font-bold mb-2 text-gray-700">Endereço</h2>
                             <div className="flex items-center space-x-2 text-base font-medium text-gray-500">
                                 <MdLocationOn />
-                                <span>123 Main St, Anytown, USA</span>
+                                <span>UTFPR - Dois Vizinhos, Estr. p/ Boa Esperança, km 04 - Zona Rural</span>
                             </div>
                         </div>
                         <div className="mb-6">
                             <h2 className="text-xl font-bold mb-2 text-gray-700">Contato</h2>
                             <a
-                                href="mailto:email@example.com"
+                                href="mailto:petproducaoleiteirautfpr@gmail.com"
                                 className="flex items-center space-x-2 text-base font-medium text-gray-500 hover:text-gray-900"
                             >
                                 <MdEmail />
-                                <span>email@example.com</span>
+                                <span>petproducaoleiteirautfpr@gmail.com</span>
                             </a>
                         </div>
                         <div className="mb-6">
                             <h2 className="text-xl font-bold mb-2 text-gray-700">Siga-nos</h2>
                             <div className="flex space-x-4">
                                 <a
-                                    href="https://www.instagram.com/your_username"
+                                    href="https://www.instagram.com/tecno_leite"
                                     className="flex items-center space-x-2 text-base font-medium text-gray-500 hover:text-gray-900"
                                 >
                                     <AiFillInstagram />
-                                    <span>Instagram</span>
+                                    <span>Tecno Leite</span>
                                 </a>
                                 <a
-                                    href="https://www.facebook.com/your_username"
+                                    href="https://www.instagram.com/petproducaoleiteira "
                                     className="flex items-center space-x-2 text-base font-medium text-gray-500 hover:text-gray-900"
                                 >
-                                    <AiFillFacebook />
-                                    <span>Facebook</span>
+                                    <AiFillInstagram />
+                                    <span>PET</span>
                                 </a>
                             </div>
                         </div>
