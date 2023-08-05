@@ -12,7 +12,7 @@ import { LogoWithDescriptionSection } from './Home/components/LogoWithDescriptio
 import { MapSection } from './Home/components/MapSection';
 
 import canal_do_leite from '../assets/canal_do_leite.png';
-import corijal from '../assets/corijal.jpeg';
+import corijal from '../assets/cotrijal.jpeg';
 import delaval from '../assets/delaval.jpeg';
 import gaio from '../assets/gaio.jpeg';
 import idr from '../assets/idr.jpeg';
@@ -46,30 +46,31 @@ const events = [
 const speakers = [
     {
         id: 1,
-        name: 'Jack Hendrix',
-        title: 'Palestrante 1',
-        about: 'Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto',
+        name: 'Renne Granato',
+        title: 'A pecuária 4.0 para melhorar o bem-estar animal, a eficiência econômica e para trazer competitividade a pecuária leiteira',
+        about: 'Bacharel em Zootecnia pela Universidade Federal de Lavras, Pós-Graduação em Nutrição de Ruminantes Leiteiros pela Rehagro, Mestrado em Administração de Negócios e Pós-MBA em Inteligência Empresarial pela Fundação Getúlio Vargas. Atualmente ocupa o cargo de Superintendente de Novos Negócios & Produção Animal, Cotrijal – RS.',
         imageUrl: 'https://static1.s123-cdn-static-a.com/uploads/2031/400_5a15a9b2d0271.jpg',
     },
     {
         id: 2,
-        name: 'Jack Hendrix',
-        title: 'Palestrante 2',
-        about: 'Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto',
+        name: 'Luis Gustavo Ribeiro Pereira',
+        title: 'Estratégias nutricionais para reduzir a emissão de metano',
+        about: 'Possui graduação em Medicina Veterinária (1999) e doutorado em Ciência Animal (2003) pela Universidade Federal de Minas Gerais. Tem experiência na área de Zootecnia, com ênfase em Nutrição de Ruminantes, Sustentabilidade Pecuária e Manejo de Precisão, atuando principalmente nos temas: nutrição de ruminantes, leite baixo carbono e pecuária leiteira de precisão. Atualmente é Pesquisador da Embrapa Gado de Leite e Cientista Visitante da Universidade de Wisconsin-Madison.',
+
         imageUrl: 'https://static1.s123-cdn-static-a.com/uploads/2031/400_5a15a9b2d0271.jpg',
     },
     {
         id: 3,
-        name: 'Jack Hendrix',
-        title: 'Palestrante 3',
-        about: 'Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto',
+        name: 'Altair Antonio Valloto',
+        title: 'Aspectos da vaca ideal, para alta vida produtiva com rentabilidade',
+        about: 'Formação em Medicina Veterinária pela Universidade (UFPR), Especializações em: Bovinocultura (UEM), Pecuária Leiteira (UEL), Produção Leiteira (REHAGRO), Mestrado em Zootecnia-Melhoramento Genético, pela Universidade (UFPR), Atualmente é Superintendente Técnico e Administrativo da Associação Paranaense de Criadores de Bovinos da Raça Holandesa. Curso Cochran Fellowship em Genética de Vacas Leiterias, Madison, Wisconsin, EUA. Curso de Pecuária Leiteira Universidade Madison-Wisconsin, EUA. Classificador e Jurado Oficial Nacional das Raças Holandesa e Jersey, coordenador pela APCBRH, da elaboração dos Planos de Melhoramento Genético dos rebanhos leiteiros dos Cooperados da Coop. Frísia-Carambeí-PR, Membro do Conselho Deliberativo Técnico da Associação Brasileira e Paranaense da Raça Holandesa.',
         imageUrl: 'https://static1.s123-cdn-static-a.com/uploads/2031/400_5a15a9b2d0271.jpg',
     },
     {
         id: 4,
-        name: 'Jack Hendrix',
-        title: 'Palestrante 4',
-        about: 'Texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto texto',
+        name: 'Ayrton Kunz',
+        title: 'O que devo levar em conta para escolher a tecnologia de geração e uso de Biogás?',
+        about: 'Graduação em Química Industrial pela Universidade Federal de Santa Maria, Mestrado e Doutorado em Química pela Universidade Estadual de Campinas, Estágio de pós-doutorado na Texas A & M University (2012) e no USDA/ARS (2012).  Pesquisador da Embrapa na unidade de Concórdia/SC atuando nas áreas digestão anaeróbia, remoção de nitrogênio (via processo Anammox, nitrificação e desnitrificação), remoção de fósforo e reúso de efluentes',
         imageUrl: 'https://static1.s123-cdn-static-a.com/uploads/2031/400_5a15a9b2d0271.jpg',
     },
 ];
