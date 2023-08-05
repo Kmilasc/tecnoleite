@@ -75,7 +75,7 @@ export function Menu() {
                             </div>
                         </div>
                         <div className="pt-5 pb-6">
-                            <div className=" space-y-1">
+                            <div className="space-y-1">
                                 {navigation.map(({ name, href, special }) => (
                                     <a
                                         data-special={special}
