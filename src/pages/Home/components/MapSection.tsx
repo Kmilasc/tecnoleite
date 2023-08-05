@@ -63,6 +63,8 @@ export function MapSection() {
         );
     }
 
+    // src={`https://www.google.com.br/maps/dir/${location.lat},+${location.lng}/UTFPR+-+Dois+Vizinhos+Estr.+p%2F+Boa+Esperança,+km+04+-+Zona+Rural+Dois+Vizinhos+-+PR+85660-000/@-25.7046501,-53.0976178,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x94f048f00dd26185:0x3965e767d865130a!2m2!1d-53.0976178!2d-25.7046501?entry=ttu`}
+
     return (
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20334.689126753296!2d-53.10570082135573!3d-25.714383401729215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f048f00dd26185%3A0x3965e767d865130a!2sUTFPR%20-%20Dois%20Vizinhos!5e0!3m2!1spt-BR!2sbr!4v1690421117022!5m2!1spt-BR!2sbr"

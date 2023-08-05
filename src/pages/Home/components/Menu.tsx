@@ -10,6 +10,7 @@ export const navigation = [
     { name: 'Sobre', href: '#' },
     { name: 'Programação', href: '#' },
     { name: 'Equipe', href: '#' },
+    { name: 'Inscrição', href: 'https://www.even3.com.br/tecnoleite-353585/', special: true },
 ];
 
 export function Menu() {
@@ -29,10 +30,19 @@ export function Menu() {
                             <MenuIcon className="h-6 w-6" aria-hidden="true" />
                         </Popover.Button>
                     </div>
-                    <nav className="hidden md:flex space-x-10">
-                        {navigation.map((item, itemIdx) => (
-                            <a key={itemIdx} href={item.href} className="text-base font-medium text-c2 hover:text-c1">
-                                {item.name}
+                    <nav className="hidden md:flex space-x-10 items-center">
+                        {navigation.map(({ href, name, special }) => (
+                            <a key={name} href={href} className="text-base font-medium text-c2 hover:text-main-600">
+                                {special ? (
+                                    <button
+                                        type="button"
+                                        className="text-white bg-gradient-to-r from-main-400 via-main-500 to-main-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-main-300 dark:focus:ring-main-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+                                    >
+                                        {name}
+                                    </button>
+                                ) : (
+                                    name
+                                )}
                             </a>
                         ))}
                     </nav>
@@ -66,13 +76,23 @@ export function Menu() {
                         </div>
                         <div className="pt-5 pb-6">
                             <div className=" space-y-1">
-                                {navigation.map(item => (
+                                {navigation.map(({ name, href, special }) => (
                                     <a
-                                        key={item.name}
-                                        href={item.href}
-                                        className="block  py-2 rounded-md text-base font-medium text-c2 hover:text-c1"
+                                        data-special={special}
+                                        key={name}
+                                        href={href}
+                                        className="block data-[special=true]:text-center py-2 rounded-md text-base font-medium text-c2 hover:text-main-600"
                                     >
-                                        {item.name}
+                                        {special ? (
+                                            <button
+                                                type="button"
+                                                className="text-white bg-gradient-to-r from-main-400 via-main-500 to-main-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-main-300 dark:focus:ring-main-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center"
+                                            >
+                                                {name}
+                                            </button>
+                                        ) : (
+                                            name
+                                        )}
                                     </a>
                                 ))}
                             </div>
