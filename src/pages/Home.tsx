@@ -2,14 +2,41 @@ import bgHome from '../assets/bgHome.png';
 
 import sobre from '../assets/sobre.png';
 import 'react-vertical-timeline-component/style.min.css';
-import { EventBanner } from './Home/components/EventBanner.js';
-import { AboutSection } from './Home/components/AboutSection.js';
-import { Menu } from './Home/components/Menu.js';
-import { Footer } from './Home/components/Footer.js';
-import { TimelineSection } from './Home/components/TimelineSection.js';
-import { TeamSection } from './Home/components/TeamSection/index.js';
-import { SponsorsSection } from './Home/components/SponsorsSection/index.js';
-import { MapSection } from './Home/components/MapSection.js';
+import { EventBanner } from './Home/components/EventBanner';
+import { AboutSection } from './Home/components/AboutSection';
+import { Menu } from './Home/components/Menu';
+import { Footer } from './Home/components/Footer';
+import { TimelineSection } from './Home/components/TimelineSection';
+import { TeamSection } from './Home/components/TeamSection/index';
+import { LogoWithDescriptionSection } from './Home/components/LogoWithDescriptionSection';
+import { MapSection } from './Home/components/MapSection';
+
+import canal_do_leite from '../assets/canal_do_leite.png';
+import corijal from '../assets/corijal.jpeg';
+import delaval from '../assets/delaval.jpeg';
+import gaio from '../assets/gaio.jpeg';
+import idr from '../assets/idr.jpeg';
+import rural_leite from '../assets/rural_leite.jpeg';
+import sicredi from '../assets/sicredi.jpeg';
+import tortuga from '../assets/tortuga.jpeg';
+import utfpr from '../assets/utfpr.jpeg';
+import zootecnia from '../assets/zootecnia.jpeg';
+
+const supporters = [
+    { text: '', image: canal_do_leite },
+    { text: '', image: idr },
+    { text: '', image: utfpr },
+    { text: '', image: zootecnia },
+];
+
+const sponsors = [
+    { text: '', image: corijal },
+    { text: '', image: delaval },
+    { text: '', image: gaio },
+    { text: '', image: rural_leite },
+    { text: '', image: sicredi },
+    { text: '', image: tortuga },
+];
 
 const events = [
     { id: 1, date: 'Day 1', text: 'Text bla bla bla bla' },
@@ -72,7 +99,8 @@ export default function Home() {
                         texto texto texto texto texto"
                         imageUrl={sobre}
                     />
-                    <SponsorsSection />
+                    <LogoWithDescriptionSection title="PATROCINADORES" items={sponsors} />
+                    <LogoWithDescriptionSection title="APOIADORES" items={supporters} />
                     <TimelineSection events={events} lineColor="#308E96" />
                     <TeamSection speakers={speakers} />
                     <MapSection />
