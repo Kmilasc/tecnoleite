@@ -13,7 +13,7 @@ export function TeamSection({ speakers }: Props) {
         <div id="palestrantes" className="flex flex-col gap-y-10">
             <div className="flex flex-col items-center">
                 <h4
-                    className="text-2xl xs:text-4xl sm:text-6xl font-conforter text-black font-bold border-spacing-1 border-b-4 "
+                    className="text-2xl xs:text-4xl sm:text-6xl font-conforter text-black font-bold border-spacing-1 border-b-4"
                     style={{ borderColor: '#308E96' }}
                 >
                     PALESTRANTES
