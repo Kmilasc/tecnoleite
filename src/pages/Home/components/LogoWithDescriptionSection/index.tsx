@@ -23,6 +23,7 @@ export function LogoWithDescriptionSection({ title, items }: Props) {
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 mt-10">
                     {items.map(({ image, text }, i) => (
                         <div
+                            key={image}
                             data-resize={i === items.length - 1 && items.length % 4 === 0}
                             className="flex md:data-[resize=true]:col-span-3 justify-center"
                         >

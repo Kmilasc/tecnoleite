@@ -19,7 +19,7 @@ export function SpeakerPresentation({ imageUrl, name, title, about }: Props) {
                     <p className="text-sm xs:text-md sm:text-xl text-center text-gray-600">{title}</p>
                 </div>
             </div>
-            <img src={imageUrl} alt="palestrante" className="w-60" />
+            <img src={imageUrl} alt="palestrante" className="w-60 rounded-full" />
             <p className="text-center">{about}</p>
         </div>
     );
