@@ -11,7 +11,9 @@ export function Footer() {
                         <div className="mb-6">
                             <h2 className="text-xl font-bold mb-2 text-gray-700">Endereço</h2>
                             <div className="flex items-center space-x-2 text-base font-medium text-gray-500">
-                                <MdLocationOn />
+                                <div className="w-10">
+                                    <MdLocationOn />
+                                </div>
                                 <span>UTFPR - Dois Vizinhos, Estr. p/ Boa Esperança, km 04 - Zona Rural</span>
                             </div>
                         </div>
@@ -51,7 +53,7 @@ export function Footer() {
                                 data-special={special}
                                 key={name}
                                 href={href}
-                                className="text-base data-[special=true]:text-center font-medium text-gray-500 hover:text-gray-900"
+                                className="text-xs sm:text-base data-[special=true]:text-center font-medium text-gray-500 hover:text-gray-900"
                             >
                                 {special ? (
                                     <button

@@ -91,7 +91,7 @@ export default function Home() {
                         subtitle={`Produção de leite com tecnologia e sustentabilidade ${'\n'} 1 e 2 de Setembro`}
                     />
                 </header>
-                <main className="w-full flex flex-col px-16 gap-y-32">
+                <main className="w-full flex flex-col px-8 md:px-16 md:gap-y-32">
                     <AboutSection
                         title="SOBRE"
                         text="Texto texto texto texto texo texto texto texto texto texto texto texo texto texto texto
@@ -108,7 +108,9 @@ export default function Home() {
                     <LogoWithDescriptionSection title="APOIADORES" items={supporters} />
                     <TimelineSection events={events} lineColor="#308E96" />
                     <TeamSection speakers={speakers} />
-                    <MapSection />
+                    <div className="mt-4 sm:mt-0">
+                        <MapSection />
+                    </div>
                 </main>
                 <Footer />
             </div>
