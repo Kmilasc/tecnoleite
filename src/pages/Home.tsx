@@ -12,7 +12,7 @@ import { LogoWithDescriptionSection } from './Home/components/LogoWithDescriptio
 import { MapSection } from './Home/components/MapSection';
 
 import canal_do_leite from '../assets/canal_do_leite.png';
-import corijal from '../assets/cotrijal.jpeg';
+import cotrijal from '../assets/cotrijal.jpeg';
 import delaval from '../assets/delaval.jpeg';
 import gaio from '../assets/gaio.jpeg';
 import idr from '../assets/idr.jpeg';
@@ -21,6 +21,7 @@ import sicredi from '../assets/sicredi.jpeg';
 import tortuga from '../assets/tortuga.jpeg';
 import utfpr from '../assets/utfpr.jpeg';
 import zootecnia from '../assets/zootecnia.jpeg';
+import dois_vizinhos from '../assets/dois_vizinhos.jpeg';
 
 import altair from '../assets/altair.jpeg';
 import ayrton from '../assets/ayrton.jpeg';
@@ -28,19 +29,20 @@ import luis_gustavo from '../assets/luis_gustavo.jpeg';
 import renne from '../assets/renne.jpeg';
 
 const supporters = [
-    { text: '', image: canal_do_leite },
-    { text: '', image: idr },
-    { text: '', image: utfpr },
-    { text: '', image: zootecnia },
+    { text: '', image: canal_do_leite, url: 'https://canaldoleite.com/' },
+    { text: '', image: idr, url: 'https://www.idrparana.pr.gov.br/' },
+    { text: '', image: utfpr, url: 'http://portal.utfpr.edu.br/campus/doisvizinhos' },
+    { text: '', image: zootecnia, url: '' },
 ];
 
 const sponsors = [
-    { text: '', image: corijal },
-    { text: '', image: delaval },
-    { text: '', image: gaio },
-    { text: '', image: rural_leite },
-    { text: '', image: sicredi },
-    { text: '', image: tortuga },
+    { text: '', image: cotrijal, url: 'https://www.cotrijal.com.br/' },
+    { text: '', image: delaval, url: 'https://www.delaval.com/pt-br/' },
+    { text: '', image: gaio, url: 'https://gaioagro.com.br/' },
+    { text: '', image: rural_leite, url: '' },
+    { text: '', image: sicredi, url: 'https://www.sicredi.com.br/home/' },
+    { text: '', image: tortuga, url: 'https://www.dsm.com/tortuga/pt_BR/home.html' },
+    { text: '', image: dois_vizinhos, url: 'https://www.doisvizinhos.pr.gov.br/' },
 ];
 
 const events = [

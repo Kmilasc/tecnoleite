@@ -5,6 +5,7 @@ interface Props {
     items: {
         image: string;
         text: string;
+        url: string;
     }[];
 }
 
@@ -24,14 +25,8 @@ export function LogoWithDescriptionSection({ title, items }: Props) {
                     data-resize={items.length % 4 === 0}
                     className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 sm:data-[resize=true]:grid-cols-2 lg:data-[resize=true]:mx-52 gap-10 mt-10"
                 >
-                    {items.map(({ image, text }) => (
-                        <SponsorPresentation
-                            key={image}
-                            url="https://www.ifood.com.br/"
-                            logo={image}
-                            alt={text}
-                            text={text}
-                        />
+                    {items.map(({ image, text, url }) => (
+                        <SponsorPresentation key={image} url={url} logo={image} alt={text} text={text} />
                     ))}
                 </div>
             </div>
