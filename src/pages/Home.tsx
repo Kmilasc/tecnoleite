@@ -21,7 +21,7 @@ import sicredi from '../assets/sicredi.jpeg';
 import tortuga from '../assets/tortuga.jpeg';
 import utfpr from '../assets/utfpr.jpeg';
 import zootecnia from '../assets/zootecnia.jpeg';
-import dois_vizinhos from '../assets/dois_vizinhos.jpeg';
+import dois_vizinhos from '../assets/dois_vizinhos.png';
 
 import altair from '../assets/altair.jpeg';
 import ayrton from '../assets/ayrton.jpeg';
