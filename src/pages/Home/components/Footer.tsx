@@ -1,4 +1,4 @@
-import { AiFillInstagram } from 'react-icons/ai';
+import { AiFillFacebook, AiFillInstagram } from 'react-icons/ai';
 import { MdEmail, MdLocationOn } from 'react-icons/md';
 import { navigation } from './Menu';
 
@@ -38,10 +38,17 @@ export function Footer() {
                                     <span>Tecno Leite</span>
                                 </a>
                                 <a
-                                    href="https://www.instagram.com/petproducaoleiteira "
+                                    href="https://www.instagram.com/petproducaoleiteira"
                                     className="flex items-center space-x-2 text-base font-medium text-gray-500 hover:text-gray-900"
                                 >
                                     <AiFillInstagram />
+                                    <span>PET</span>
+                                </a>
+                                <a
+                                    href="https://www.facebook.com/utfpr.petproducaoleiteira"
+                                    className="flex items-center space-x-2 text-base font-medium text-gray-500 hover:text-gray-900"
+                                >
+                                    <AiFillFacebook />
                                     <span>PET</span>
                                 </a>
                             </div>
