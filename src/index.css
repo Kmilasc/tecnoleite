@@ -3,6 +3,12 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    *, html {
+        @apply scroll-smooth
+    }
+}
+
 #root {
     margin: 0px;
     padding: 0px;

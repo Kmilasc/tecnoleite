@@ -6,10 +6,10 @@ import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import logo from '../../../assets/logo.jpg';
 
 export const navigation = [
-    { name: 'Inicio', href: '#' },
-    { name: 'Sobre', href: '#' },
-    { name: 'Programação', href: '#' },
-    { name: 'Equipe', href: '#' },
+    { name: 'Inicio', href: '#event-banner' },
+    { name: 'Sobre', href: '#about-section' },
+    { name: 'Programação', href: '#cronogram' },
+    { name: 'Equipe', href: '#team' },
     { name: 'Inscrição', href: 'https://www.even3.com.br/tecnoleite-353585/', special: true },
 ];
 
@@ -18,10 +18,10 @@ export function Menu() {
         <Popover className="relative bg-white">
             <div className="w-full">
                 <div className="flex justify-between items-center md:justify-start md:space-x-10 mb-2 mt-5">
-                    <div className="flex justify-start lg:w-0 lg:flex-1">
+                    <div className="flex justify-start flex-1">
                         <a href="#">
                             <span className="sr-only">Workflow</span>
-                            <img className="place-items-center h-20 w-60 ml-5" src={logo} alt="" />
+                            <img className="place-items-center h-16 md:h-24 ml-12 p-1" src={logo} alt="" />
                         </a>
                     </div>
                     <div className="-mr-2 -my-2 md:hidden">
@@ -30,7 +30,7 @@ export function Menu() {
                             <MenuIcon className="h-6 w-6" aria-hidden="true" />
                         </Popover.Button>
                     </div>
-                    <nav className="hidden md:flex space-x-10 items-center">
+                    <nav className="hidden md:flex space-x-10 items-center ml-auto pr-4">
                         {navigation.map(({ href, name, special }) => (
                             <a key={name} href={href} className="text-base font-medium text-c2 hover:text-main-600">
                                 {special ? (
@@ -46,7 +46,6 @@ export function Menu() {
                             </a>
                         ))}
                     </nav>
-                    <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0" />
                 </div>
             </div>
             <Transition
