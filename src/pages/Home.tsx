@@ -93,7 +93,8 @@ export default function Home() {
                         subtitle={`Produção de leite com tecnologia e sustentabilidade ${'\n'} 21 e 22 de Setembro`}
                     />
                 </header>
-                <main className="w-full flex flex-col px-8 md:px-16 md:gap-y-32">
+                <main className="w-full flex flex-col px-8 md:px-16 gap-y-8 md:gap-y-32">
+                    <TimelineSection events={events} lineColor="#308E96" />
                     <AboutSection
                         title="SOBRE"
                         text="Texto texto texto texto texo texto texto texto texto texto texto texo texto texto texto
@@ -106,9 +107,9 @@ export default function Home() {
                         texto texto texto texto texto"
                         imageUrl={sobre}
                     />
-                    <LogoWithDescriptionSection title="PATROCINADORES" items={sponsors} />
+                    {/* Organizadores */}
                     <LogoWithDescriptionSection title="APOIADORES" items={supporters} />
-                    <TimelineSection events={events} lineColor="#308E96" />
+                    <LogoWithDescriptionSection title="PATROCINADORES" items={sponsors} />
                     <TeamSection speakers={speakers} />
                     <div className="mt-4 sm:mt-0">
                         <MapSection />
