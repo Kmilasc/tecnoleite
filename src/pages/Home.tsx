@@ -97,14 +97,8 @@ export default function Home() {
                     <TimelineSection events={events} lineColor="#308E96" />
                     <AboutSection
                         title="SOBRE"
-                        text="Texto texto texto texto texo texto texto texto texto texto texto texo texto texto texto
-                        texto texto texto texo texto texto texto texto texto texto texto texo texto texto texto
-                        texto texto texto texo texto texto texto texto texto texo texto texto texto texto texto
-                        texto texo texto texto texto texto texto texto texo texto texto texto Texto texto texto
-                        texto texo texto texto texto texto texto texto texo texto texto texto texto texto texto
-                        texo texto texto texto texto texto texto texto texo texto texto texto texto texto texto
-                        texo texto texto texto texto texto texo texto texto texto texto texto texto texo texto
-                        texto texto texto texto texto"
+                        text="O TECNOLEITE é um evento técnico de caráter extensionista, idealizado, organizado e realizado pelo grupo PET Produção Leiteira da UTFPR - Campus Dois Vizinhos, em parceria com a Universidade Tecnológica Federal do Paraná, o IDRPR e outras organizações público e privadas atuantes na cadeia produtiva do leite. 
+                        É evento bianual que tem como objetivo divulgar conhecimento científico, técnico e tecnológico a acadêmicos, pesquisadores, professores, produtores e profissionais que atuam direta ou indiretamente na produção de leite, com o intuito de contribuir para o aumento da produtividade, de forma sustentável e economicamente viável e, dessa forma, promover a formação continuada do público que atua em todos os extratos da cadeia produtiva do leite."
                         imageUrl={sobre}
                     />
                     {/* Organizadores */}
