@@ -46,8 +46,42 @@ const sponsors = [
 ];
 
 const events = [
-    { id: 1, date: 'Day 1', text: 'Text bla bla bla bla' },
-    { id: 2, date: 'Day 2', text: 'Bla bla bla bla' },
+    { id: 1, date: 'Dia 21/09', text: '7:30 horas - Credenciamento' },
+    { id: 2, date: 'Dia 21/09', text: '8:30 horas – Mesa de abertura' },
+    {
+        id: 3,
+        date: 'Dia 21/09',
+        text: '9:30 horas - A pecuária 4.0 para melhorar o bem-estar animal, a eficiência econômica e para trazer competitividade ao produtor familiar, Renne Granato – Cotrijal – RS',
+    },
+    { id: 4, date: 'Dia 21/09', text: '10:20 horas – Milk break' },
+    { id: 5, date: 'Dia 21/09', text: '10:40 horas – A confirmar' },
+    { id: 6, date: 'Dia 21/09', text: '11:30 horas – Mesa redonda' },
+    { id: 7, date: 'Dia 21/09', text: '12:00 horas – Intervalo para almoço' },
+    {
+        id: 8,
+        date: 'Dia 21/09',
+        text: '13:30 horas – “Aspectos da vaca ideal, para alta vida produtiva com rentabilidade” Altair Antonio Valloto - Associação Paranaense de Criadores de Bovinos da Raça Holandesa',
+    },
+    { id: 9, date: 'Dia 21/09', text: '14:20 horas – A confirmar' },
+    { id: 10, date: 'Dia 21/09', text: '15:10 horas – Mesa Redonda' },
+    { id: 11, date: 'Dia 21/09', text: '15:40 – Milk Break' },
+    { id: 12, date: 'Dia 22/09', text: '09:00 horas – Rasiel Restelatto' },
+    { id: 13, date: 'Dia 22/09', text: '09:50 horas – Milk Break' },
+    { id: 14, date: 'Dia 22/09', text: '10:20 horas – Marcelo Cecim - A confirmar' },
+    { id: 15, date: 'Dia 22/09', text: '11:10 horas -  Mesa Redonda' },
+    { id: 16, date: 'Dia 22/09', text: '11:40 – Almoço' },
+    {
+        id: 17,
+        date: 'Dia 22/09',
+        text: '13:30 - O que devo levar em conta para escolher a tecnologia de geração e uso de Biogás? Ayrton Kunz – Embrapa Concórdia',
+    },
+    {
+        id: 18,
+        date: 'Dia 22/09',
+        text: '14:20 horas – Estratégias nutricionais para reduzir a emissão de metano Luis Gustavo Ribeiro Pereira - Pesquisador da Embrapa Gado de Leite',
+    },
+    { id: 19, date: 'Dia 22/09', text: '15:10 - Mesa Redonda' },
+    { id: 20, date: 'Dia 22/09', text: '15:40 – Milk Break' },
 ];
 
 const speakers = [
