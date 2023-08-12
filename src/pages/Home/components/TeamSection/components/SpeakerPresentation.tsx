@@ -2,18 +2,24 @@ import { Modal } from 'flowbite-react';
 import { useState } from 'react';
 
 export interface Props {
+    id: number;
     name: string;
     title: string;
     imageUrl: string;
     about: string;
 }
 
-export function SpeakerPresentation({ imageUrl, name, title, about }: Props) {
+export function SpeakerPresentation({ id, imageUrl, name, title, about }: Props) {
     const [openModal, setOpenModal] = useState<string | undefined>();
 
     return (
         <>
-            <div aria-hidden onClick={() => setOpenModal('default')} className="flex flex-col items-center gap-y-4 p-8">
+            <div
+                id={`speaker-${id}`}
+                aria-hidden
+                onClick={() => setOpenModal('default')}
+                className="flex flex-col items-center gap-y-4 p-8"
+            >
                 <img src={imageUrl} alt="palestrante" className="w-60 rounded-full" />
                 <div className="flex flex-col items-center">
                     <span

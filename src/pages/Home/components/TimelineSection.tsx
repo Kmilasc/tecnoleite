@@ -3,7 +3,7 @@ import 'react-vertical-timeline-component/style.min.css';
 import { ClockIcon } from '@heroicons/react/solid';
 
 interface Props {
-    events: { id: number; date: string; text: string }[];
+    events: { id: number; date: string; text: string; link?: string }[];
     lineColor: string;
 }
 
@@ -20,7 +20,7 @@ export function TimelineSection({ events, lineColor }: Props) {
             </div>
             <div className="flex flex-row gap-x-4 mx-8">
                 <VerticalTimeline lineColor={lineColor}>
-                    {events.map(({ id, date, text }) => (
+                    {events.map(({ id, date, text, link }) => (
                         <VerticalTimelineElement
                             key={id}
                             className="vertical-timeline-element--work c2"
@@ -32,8 +32,17 @@ export function TimelineSection({ events, lineColor }: Props) {
                             icon={<ClockIcon />}
                             contentStyle={{ background: '#f2f2f2' }}
                         >
-                            <h3 className="vertical-timeline-element-title">{date}</h3>
-                            <p>{text}</p>
+                            {link ? (
+                                <a href={link}>
+                                    <h3 className="vertical-timeline-element-title">{date}</h3>
+                                    <p>{text}</p>
+                                </a>
+                            ) : (
+                                <>
+                                    <h3 className="vertical-timeline-element-title">{date}</h3>
+                                    <p>{text}</p>
+                                </>
+                            )}
                         </VerticalTimelineElement>
                     ))}
                 </VerticalTimeline>

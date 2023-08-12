@@ -21,7 +21,7 @@ export function TeamSection({ speakers }: Props) {
             </div>
             <div className="flex flex-col lg:grid lg:auto-cols-max lg:grid-cols-2 gap-4">
                 {speakers.map(({ id, name, title, imageUrl, about }) => (
-                    <SpeakerPresentation key={id} name={name} title={title} imageUrl={imageUrl} about={about} />
+                    <SpeakerPresentation key={id} id={id} name={name} title={title} imageUrl={imageUrl} about={about} />
                 ))}
             </div>
         </div>
