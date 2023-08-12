@@ -2,6 +2,7 @@ import { SponsorPresentation } from './components/SponsorPresentation';
 
 interface Props {
     title: string;
+    col?: number;
     items: {
         image: string;
         text: string;
@@ -9,7 +10,7 @@ interface Props {
     }[];
 }
 
-export function LogoWithDescriptionSection({ title, items }: Props) {
+export function LogoWithDescriptionSection({ title, items, col = 3 }: Props) {
     return (
         <div className="flex flex-col items-center gap-y-4">
             <div className="flex flex-col items-center">
@@ -23,7 +24,8 @@ export function LogoWithDescriptionSection({ title, items }: Props) {
             <div className="max-w-[1000px]">
                 <div
                     data-resize={items.length % 4 === 0}
-                    className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 sm:data-[resize=true]:grid-cols-2 lg:data-[resize=true]:mx-52 gap-10 mt-10"
+                    data-grid-col={col}
+                    className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  md:data-[grid-col="2"]:grid-cols-2 sm:data-[resize=true]:grid-cols-2 lg:data-[resize=true]:mx-52 gap-10 mt-10`}
                 >
                     {items.map(({ image, text, url }) => (
                         <SponsorPresentation key={image} url={url} logo={image} alt={text} text={text} />

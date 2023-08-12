@@ -11,35 +11,41 @@ import { TeamSection } from './Home/components/TeamSection/index';
 import { LogoWithDescriptionSection } from './Home/components/LogoWithDescriptionSection';
 import { MapSection } from './Home/components/MapSection';
 
+import pet from '../assets/pet.jpg';
+import idr from '../assets/idr.jpeg';
+
 import canal_do_leite from '../assets/canal_do_leite.png';
 import cotrijal from '../assets/cotrijal.jpeg';
 import delaval from '../assets/delaval.jpeg';
 import gaio from '../assets/gaio.jpeg';
-import idr from '../assets/idr.jpeg';
 import rural_leite from '../assets/rural_leite.jpeg';
 import sicredi from '../assets/sicredi.jpeg';
 import tortuga from '../assets/tortuga.jpeg';
 import utfpr from '../assets/utfpr.jpeg';
 import zootecnia from '../assets/zootecnia.jpeg';
-import dois_vizinhos from '../assets/dois_vizinhos.png';
+import dois_vizinhos from '../assets/dois-vizinhos.png';
 
 import altair from '../assets/altair.jpeg';
 import ayrton from '../assets/ayrton.jpeg';
 import luis_gustavo from '../assets/luis_gustavo.jpeg';
 import renne from '../assets/renne.jpeg';
 
+const organizers = [
+    { text: '', image: pet, url: 'https://www.instagram.com/petproducaoleiteira' },
+    { text: '', image: idr, url: 'https://www.idrparana.pr.gov.br/' },
+];
+
 const supporters = [
     { text: '', image: canal_do_leite, url: 'https://canaldoleite.com/' },
-    { text: '', image: idr, url: 'https://www.idrparana.pr.gov.br/' },
     { text: '', image: utfpr, url: 'http://portal.utfpr.edu.br/campus/doisvizinhos' },
-    { text: '', image: zootecnia, url: '' },
+    { text: '', image: zootecnia, url: 'https://www.instagram.com/zootecniautfprdv_oficial/' },
 ];
 
 const sponsors = [
     { text: '', image: cotrijal, url: 'https://www.cotrijal.com.br/' },
     { text: '', image: delaval, url: 'https://www.delaval.com/pt-br/' },
     { text: '', image: gaio, url: 'https://gaioagro.com.br/' },
-    { text: '', image: rural_leite, url: '' },
+    { text: '', image: rural_leite, url: '#' },
     { text: '', image: sicredi, url: 'https://www.sicredi.com.br/home/' },
     { text: '', image: tortuga, url: 'https://www.dsm.com/tortuga/pt_BR/home.html' },
     { text: '', image: dois_vizinhos, url: 'https://www.doisvizinhos.pr.gov.br/' },
@@ -137,7 +143,7 @@ export default function Home() {
                         É evento bianual que tem como objetivo divulgar conhecimento científico, técnico e tecnológico a acadêmicos, pesquisadores, professores, produtores e profissionais que atuam direta ou indiretamente na produção de leite, com o intuito de contribuir para o aumento da produtividade, de forma sustentável e economicamente viável e, dessa forma, promover a formação continuada do público que atua em todos os extratos da cadeia produtiva do leite."
                         imageUrl={sobre}
                     />
-                    {/* Organizadores */}
+                    <LogoWithDescriptionSection col={2} title="ORGANIZADORES" items={organizers} />
                     <LogoWithDescriptionSection title="APOIADORES" items={supporters} />
                     <LogoWithDescriptionSection title="PATROCINADORES" items={sponsors} />
                     <TeamSection speakers={speakers} />
