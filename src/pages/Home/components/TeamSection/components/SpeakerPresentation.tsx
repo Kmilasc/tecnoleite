@@ -20,7 +20,7 @@ export function SpeakerPresentation({ id, imageUrl, name, title, about }: Props)
                 onClick={() => setOpenModal('default')}
                 className="flex flex-col items-center gap-y-4 p-8"
             >
-                <img src={imageUrl} alt="palestrante" className="w-60 rounded-full" />
+                <img src={imageUrl} alt="palestrante" className="w-60 h-60 rounded-full" />
                 <div className="flex flex-col items-center">
                     <span
                         className="text-md xs:text-xl sm:text-2xl font-conforter text-black font-bold border-spacing-1 border-b-4 "

@@ -24,11 +24,17 @@ import tortuga from '../assets/tortuga.jpeg';
 import utfpr from '../assets/utfpr.jpeg';
 import zootecnia from '../assets/zootecnia.jpeg';
 import dois_vizinhos from '../assets/dois-vizinhos.png';
+import timac from '../assets/timac.png';
+import itaipu from '../assets/itaipu.png';
+import holandesas from '../assets/holandesas.jpeg';
+import caap from '../assets/caap.jpeg';
+import faep from '../assets/faep.jpeg';
 
 import altair from '../assets/altair.jpeg';
 import ayrton from '../assets/ayrton.jpeg';
 import luis_gustavo from '../assets/luis_gustavo.jpeg';
 import renne from '../assets/renne.jpeg';
+import marcelo_cecim from '../assets/marcelo_cecim.png';
 
 const organizers = [
     { text: '', image: pet, url: 'https://www.instagram.com/petproducaoleiteira' },
@@ -36,12 +42,17 @@ const organizers = [
 ];
 
 const supporters = [
+    { text: '', image: holandesas, url: 'https://canaldoleite.com/' },
+    { text: '', image: caap, url: 'https://www.facebook.com/cazap.br/' },
+    { text: '', image: faep, url: 'https://www.sistemafaep.org.br/' },
     { text: '', image: canal_do_leite, url: 'https://canaldoleite.com/' },
     { text: '', image: utfpr, url: 'http://portal.utfpr.edu.br/campus/doisvizinhos' },
     { text: '', image: zootecnia, url: 'https://www.instagram.com/zootecniautfprdv_oficial/' },
 ];
 
 const sponsors = [
+    { text: '', image: timac, url: 'https://www.timacagro.com.br/' },
+    { text: '', image: itaipu, url: 'https://www.itaipu.gov.br/' },
     { text: '', image: cotrijal, url: 'https://www.cotrijal.com.br/' },
     { text: '', image: delaval, url: 'https://www.delaval.com/pt-br/' },
     { text: '', image: gaio, url: 'https://gaioagro.com.br/' },
@@ -79,6 +90,13 @@ const speakers = [
         title: 'O que devo levar em conta para escolher a tecnologia de geração e uso de Biogás?',
         about: 'Graduação em Química Industrial pela Universidade Federal de Santa Maria, Mestrado e Doutorado em Química pela Universidade Estadual de Campinas, Estágio de pós-doutorado na Texas A & M University (2012) e no USDA/ARS (2012).  Pesquisador da Embrapa na unidade de Concórdia/SC atuando nas áreas digestão anaeróbia, remoção de nitrogênio (via processo Anammox, nitrificação e desnitrificação), remoção de fósforo e reúso de efluentes',
         imageUrl: ayrton,
+    },
+    {
+        id: 5,
+        name: 'Marcelo da Silva Cecim',
+        title: 'Professor de medicina interna',
+        about: 'Marcelo Cecim possui graduação em Medicina Veterinária pela Universidade Federal de Santa Maria (UFSM, 1985); Mestrado em Produção Animal com ênfase em Etologia pela Escola de Agricultura da Southern Illinois University (SIU, 1989); PhD em Endocrinologia pela Escola de Medicina da Southern Illinois University (1994). É professor de medicina interna de ruminantes na UFSM desde 1996.',
+        imageUrl: marcelo_cecim,
     },
 ];
 
