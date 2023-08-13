@@ -1,13 +1,14 @@
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import { ClockIcon } from '@heroicons/react/solid';
+import { ClockIcon, CalendarIcon } from '@heroicons/react/solid';
+import { ReactNode } from 'react';
 
 interface Props {
-    events: { id: number; date: string; text: string; link?: string }[];
+    dates: { date?: string; events: { id: number; text: string | ReactNode; link?: string }[] }[];
     lineColor: string;
 }
 
-export function TimelineSection({ events, lineColor }: Props) {
+export function TimelineSection({ dates, lineColor }: Props) {
     return (
         <div id="cronogram" className="flex flex-col">
             <div id="programacao" className="self-center pb-8">
@@ -20,30 +21,40 @@ export function TimelineSection({ events, lineColor }: Props) {
             </div>
             <div className="flex flex-row gap-x-4 mx-8">
                 <VerticalTimeline lineColor={lineColor}>
-                    {events.map(({ id, date, text, link }) => (
-                        <VerticalTimelineElement
-                            key={id}
-                            className="vertical-timeline-element--work c2"
-                            date={date}
-                            iconStyle={{
-                                background: lineColor,
-                                color: '#fff',
-                            }}
-                            icon={<ClockIcon />}
-                            contentStyle={{ background: '#f2f2f2' }}
-                        >
-                            {link ? (
-                                <a href={link}>
-                                    <h3 className="vertical-timeline-element-title">{date}</h3>
-                                    <p>{text}</p>
-                                </a>
-                            ) : (
-                                <>
-                                    <h3 className="vertical-timeline-element-title">{date}</h3>
-                                    <p>{text}</p>
-                                </>
-                            )}
-                        </VerticalTimelineElement>
+                    {dates.map(({ date, events }) => (
+                        <>
+                            <VerticalTimelineElement
+                                key={date}
+                                className="vertical-timeline-element--work c2"
+                                date={date}
+                                iconStyle={{
+                                    background: lineColor,
+                                    color: '#fff',
+                                }}
+                                icon={<CalendarIcon />}
+                                contentStyle={{ background: '#fff', padding: 0, marginBottom: 20 }}
+                            />
+                            {events.map(({ id, text, link }) => (
+                                <VerticalTimelineElement
+                                    key={id}
+                                    className="vertical-timeline-element--work c2"
+                                    iconStyle={{
+                                        background: lineColor,
+                                        color: '#fff',
+                                    }}
+                                    icon={<ClockIcon />}
+                                    contentStyle={{ background: '#f2f2f2' }}
+                                >
+                                    {link ? (
+                                        <a href={link}>
+                                            <p style={{ margin: 0 }}>{text}</p>
+                                        </a>
+                                    ) : (
+                                        <p style={{ margin: 0 }}>{text}</p>
+                                    )}
+                                </VerticalTimelineElement>
+                            ))}
+                        </>
                     ))}
                 </VerticalTimeline>
             </div>

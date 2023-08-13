@@ -100,45 +100,51 @@ const speakers = [
     },
 ];
 
-const events = [
-    { id: 1, date: 'Dia 21/09', text: '7:30 horas - Credenciamento' },
-    { id: 2, date: 'Dia 21/09', text: '8:30 horas – Mesa de abertura' },
+const dates = [
     {
-        id: 3,
         date: 'Dia 21/09',
-        text: '9:30 horas - A pecuária 4.0 para melhorar o bem-estar animal, a eficiência econômica e para trazer competitividade ao produtor familiar, Renne Granato – Cotrijal – RS',
-        link: '#speaker-1',
+        events: [
+            { id: 1, text: '7:30 horas - Credenciamento' },
+            { id: 2, text: '8:30 horas – Mesa de abertura' },
+            {
+                id: 3,
+                text: '9:30 horas - A pecuária 4.0 para melhorar o bem-estar animal, a eficiência econômica e para trazer competitividade ao produtor familiar, Renne Granato – Cotrijal – RS',
+                link: '#speaker-1',
+            },
+            { id: 4, text: '10:20 horas – Milk break' },
+            { id: 5, text: '10:40 horas – A confirmar' },
+            { id: 6, text: '11:30 horas – Mesa redonda' },
+            { id: 7, text: '12:00 horas – Intervalo para almoço' },
+            {
+                id: 8,
+                text: '13:30 horas – “Aspectos da vaca ideal, para alta vida produtiva com rentabilidade” Altair Antonio Valloto - Associação Paranaense de Criadores de Bovinos da Raça Holandesa',
+                link: '#speaker-3',
+            },
+            { id: 9, text: '14:20 horas – A confirmar' },
+            { id: 10, text: '15:10 horas – Mesa Redonda' },
+            { id: 11, text: '15:40 – Milk Break' },
+        ],
     },
-    { id: 4, date: 'Dia 21/09', text: '10:20 horas – Milk break' },
-    { id: 5, date: 'Dia 21/09', text: '10:40 horas – A confirmar' },
-    { id: 6, date: 'Dia 21/09', text: '11:30 horas – Mesa redonda' },
-    { id: 7, date: 'Dia 21/09', text: '12:00 horas – Intervalo para almoço' },
     {
-        id: 8,
-        date: 'Dia 21/09',
-        text: '13:30 horas – “Aspectos da vaca ideal, para alta vida produtiva com rentabilidade” Altair Antonio Valloto - Associação Paranaense de Criadores de Bovinos da Raça Holandesa',
-        link: '#speaker-3',
-    },
-    { id: 9, date: 'Dia 21/09', text: '14:20 horas – A confirmar' },
-    { id: 10, date: 'Dia 21/09', text: '15:10 horas – Mesa Redonda' },
-    { id: 11, date: 'Dia 21/09', text: '15:40 – Milk Break' },
-    { id: 12, date: 'Dia 22/09', text: '09:00 horas – Rasiel Restelatto', link: '#speaker-' },
-    { id: 13, date: 'Dia 22/09', text: '09:50 horas – Milk Break' },
-    { id: 14, date: 'Dia 22/09', text: '10:20 horas – Marcelo Cecim - A confirmar', link: '#speaker-' },
-    { id: 15, date: 'Dia 22/09', text: '11:10 horas - Mesa Redonda' },
-    { id: 16, date: 'Dia 22/09', text: '11:40 – Almoço' },
-    {
-        id: 17,
         date: 'Dia 22/09',
-        text: '13:30 - O que devo levar em conta para escolher a tecnologia de geração e uso de Biogás? Ayrton Kunz – Embrapa Concórdia',
+        events: [
+            { id: 12, text: '09:00 horas – Rasiel Restelatto', link: '#speaker-' },
+            { id: 13, text: '09:50 horas – Milk Break' },
+            { id: 14, text: '10:20 horas – Marcelo Cecim - A confirmar', link: '#speaker-' },
+            { id: 15, text: '11:10 horas - Mesa Redonda' },
+            { id: 16, text: '11:40 – Almoço' },
+            {
+                id: 17,
+                text: '13:30 - O que devo levar em conta para escolher a tecnologia de geração e uso de Biogás? Ayrton Kunz – Embrapa Concórdia',
+            },
+            {
+                id: 18,
+                text: '14:20 horas – Estratégias nutricionais para reduzir a emissão de metano Luis Gustavo Ribeiro Pereira - Pesquisador da Embrapa Gado de Leite',
+            },
+            { id: 19, text: '15:10 - Mesa Redonda' },
+            { id: 20, text: '15:40 – Milk Break' },
+        ],
     },
-    {
-        id: 18,
-        date: 'Dia 22/09',
-        text: '14:20 horas – Estratégias nutricionais para reduzir a emissão de metano Luis Gustavo Ribeiro Pereira - Pesquisador da Embrapa Gado de Leite',
-    },
-    { id: 19, date: 'Dia 22/09', text: '15:10 - Mesa Redonda' },
-    { id: 20, date: 'Dia 22/09', text: '15:40 – Milk Break' },
 ];
 
 export default function Home() {
@@ -154,7 +160,7 @@ export default function Home() {
                     />
                 </header>
                 <main className="w-full flex flex-col px-8 md:px-16 gap-y-8 md:gap-y-32">
-                    <TimelineSection events={events} lineColor="#308E96" />
+                    <TimelineSection dates={dates} lineColor="#308E96" />
                     <AboutSection
                         title="SOBRE"
                         text="O TECNOLEITE é um evento técnico de caráter extensionista, idealizado, organizado e realizado pelo grupo PET Produção Leiteira da UTFPR - Campus Dois Vizinhos, em parceria com a Universidade Tecnológica Federal do Paraná, o IDRPR e outras organizações público e privadas atuantes na cadeia produtiva do leite. 
