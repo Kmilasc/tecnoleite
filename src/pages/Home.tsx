@@ -108,7 +108,13 @@ const dates = [
             { id: 2, text: '8:30 horas – Mesa de abertura' },
             {
                 id: 3,
-                text: '9:30 horas - A pecuária 4.0 para melhorar o bem-estar animal, a eficiência econômica e para trazer competitividade ao produtor familiar, Renne Granato – Cotrijal – RS',
+                text: (
+                    <>
+                        9:30 horas - A pecuária 4.0 para melhorar o bem-estar animal, a eficiência econômica e para
+                        trazer competitividade ao produtor familiar, <b className="text-black">Renne Granato</b> –
+                        Cotrijal – RS
+                    </>
+                ),
                 link: '#speaker-1',
             },
             { id: 4, text: '10:20 horas – Milk break' },
@@ -117,7 +123,13 @@ const dates = [
             { id: 7, text: '12:00 horas – Intervalo para almoço' },
             {
                 id: 8,
-                text: '13:30 horas – “Aspectos da vaca ideal, para alta vida produtiva com rentabilidade” Altair Antonio Valloto - Associação Paranaense de Criadores de Bovinos da Raça Holandesa',
+                text: (
+                    <>
+                        13:30 horas – “Aspectos da vaca ideal, para alta vida produtiva com rentabilidade”{' '}
+                        <b className="text-black">Altair Antonio Valloto</b> - Associação Paranaense de Criadores de
+                        Bovinos da Raça Holandesa
+                    </>
+                ),
                 link: '#speaker-3',
             },
             { id: 9, text: '14:20 horas – A confirmar' },
@@ -128,18 +140,47 @@ const dates = [
     {
         date: 'Dia 22/09',
         events: [
-            { id: 12, text: '09:00 horas – Rasiel Restelatto', link: '#speaker-' },
+            {
+                id: 12,
+                text: (
+                    <>
+                        09:00 horas – <b className="text-black">Rasiel Restelatto</b>
+                    </>
+                ),
+                link: '#speaker-',
+            },
             { id: 13, text: '09:50 horas – Milk Break' },
-            { id: 14, text: '10:20 horas – Marcelo Cecim - A confirmar', link: '#speaker-' },
+            {
+                id: 14,
+                text: (
+                    <>
+                        10:20 horas – <b className="text-black">Marcelo Cecim</b> - A confirmar
+                    </>
+                ),
+                link: '#speaker-5',
+            },
             { id: 15, text: '11:10 horas - Mesa Redonda' },
             { id: 16, text: '11:40 – Almoço' },
             {
                 id: 17,
-                text: '13:30 - O que devo levar em conta para escolher a tecnologia de geração e uso de Biogás? Ayrton Kunz – Embrapa Concórdia',
+                text: (
+                    <>
+                        13:30 - O que devo levar em conta para escolher a tecnologia de geração e uso de Biogás?{' '}
+                        <b className="text-black">Ayrton Kunz</b> – Embrapa Concórdia
+                    </>
+                ),
+                link: '#speaker-4',
             },
             {
                 id: 18,
-                text: '14:20 horas – Estratégias nutricionais para reduzir a emissão de metano Luis Gustavo Ribeiro Pereira - Pesquisador da Embrapa Gado de Leite',
+                text: (
+                    <>
+                        14:20 horas – Estratégias nutricionais para reduzir a emissão de metano{' '}
+                        <b className="text-black">Luis Gustavo Ribeiro Pereira</b> - Pesquisador da Embrapa Gado de
+                        Leite
+                    </>
+                ),
+                link: '#speaker-2',
             },
             { id: 19, text: '15:10 - Mesa Redonda' },
             { id: 20, text: '15:40 – Milk Break' },
