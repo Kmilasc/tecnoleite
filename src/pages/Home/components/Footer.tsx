@@ -20,8 +20,10 @@ export function Footer() {
                         <div className="mb-6">
                             <h2 className="text-xl font-bold mb-2 text-gray-700">Contato</h2>
                             <a
+                                target="_blank"
                                 href="mailto:petproducaoleiteirautfpr@gmail.com"
                                 className="flex items-center space-x-2 text-base font-medium text-gray-500 hover:text-gray-900"
+                                rel="noreferrer"
                             >
                                 <MdEmail />
                                 <span>petproducaoleiteirautfpr@gmail.com</span>
@@ -31,22 +33,28 @@ export function Footer() {
                             <h2 className="text-xl font-bold mb-2 text-gray-700">Siga-nos</h2>
                             <div className="flex space-x-4">
                                 <a
+                                    target="_blank"
                                     href="https://www.instagram.com/tecno_leite"
                                     className="flex items-center space-x-2 text-base font-medium text-gray-500 hover:text-gray-900"
+                                    rel="noreferrer"
                                 >
                                     <AiFillInstagram />
                                     <span>Tecno Leite</span>
                                 </a>
                                 <a
+                                    target="_blank"
                                     href="https://www.instagram.com/petproducaoleiteira"
                                     className="flex items-center space-x-2 text-base font-medium text-gray-500 hover:text-gray-900"
+                                    rel="noreferrer"
                                 >
                                     <AiFillInstagram />
                                     <span>PET</span>
                                 </a>
                                 <a
+                                    target="_blank"
                                     href="https://www.facebook.com/utfpr.petproducaoleiteira"
                                     className="flex items-center space-x-2 text-base font-medium text-gray-500 hover:text-gray-900"
+                                    rel="noreferrer"
                                 >
                                     <AiFillFacebook />
                                     <span>PET</span>
@@ -57,10 +65,12 @@ export function Footer() {
                     <nav className="mt-8 flex justify-center space-x-5 items-center">
                         {navigation.map(({ href, name, special }) => (
                             <a
+                                target={href[0] === '#' ? undefined : '_blank'}
                                 data-special={special}
                                 key={name}
                                 href={href}
                                 className="text-xs sm:text-base data-[special=true]:text-center font-medium text-gray-500 hover:text-gray-900"
+                                rel="noreferrer"
                             >
                                 {special ? (
                                     <button

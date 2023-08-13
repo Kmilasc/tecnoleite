@@ -32,7 +32,13 @@ export function Menu() {
                     </div>
                     <nav className="hidden md:flex space-x-10 items-center ml-auto pr-4">
                         {navigation.map(({ href, name, special }) => (
-                            <a key={name} href={href} className="text-base font-medium text-c2 hover:text-main-600">
+                            <a
+                                key={name}
+                                href={href}
+                                target={href[0] === '#' ? undefined : '_blank'}
+                                className="text-base font-medium text-c2 hover:text-main-600"
+                                rel="noreferrer"
+                            >
                                 {special ? (
                                     <button
                                         type="button"
@@ -77,10 +83,12 @@ export function Menu() {
                             <div className="space-y-1">
                                 {navigation.map(({ name, href, special }) => (
                                     <a
+                                        target={href[0] === '#' ? undefined : '_blank'}
                                         data-special={special}
                                         key={name}
                                         href={href}
                                         className="block data-[special=true]:text-center py-2 rounded-md text-base font-medium text-c2 hover:text-main-600"
+                                        rel="noreferrer"
                                     >
                                         {special ? (
                                             <button
