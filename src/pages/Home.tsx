@@ -29,12 +29,13 @@ import itaipu from '../assets/itaipu.png';
 import holandesas from '../assets/holandesas.jpeg';
 import caap from '../assets/caap.jpeg';
 import faep from '../assets/faep.jpeg';
+import inpasa from '../assets/inpasa.jpeg';
 
 import altair from '../assets/altair.jpeg';
 import ayrton from '../assets/ayrton.jpeg';
 import luis_gustavo from '../assets/luis_gustavo.jpeg';
 import renne from '../assets/renne.jpeg';
-import marcelo_cecim from '../assets/marcelo_cecim.png';
+import marcelo_cecim from '../assets/marcelo_cecim.jpg';
 
 const organizers = [
     { text: '', image: pet, url: 'https://www.instagram.com/petproducaoleiteira' },
@@ -60,6 +61,7 @@ const sponsors = [
     { text: '', image: sicredi, url: 'https://www.sicredi.com.br/home/' },
     { text: '', image: tortuga, url: 'https://www.dsm.com/tortuga/pt_BR/home.html' },
     { text: '', image: dois_vizinhos, url: 'https://www.doisvizinhos.pr.gov.br/' },
+    { text: '', image: inpasa, url: 'https://www.inpasa.com.br/' },
 ];
 
 const speakers = [
@@ -94,7 +96,7 @@ const speakers = [
     {
         id: 5,
         name: 'Marcelo da Silva Cecim',
-        title: 'Professor de medicina interna',
+        title: 'Sobre vacas e pessoas: Do monitoramento remoto por inteligência artificial à psicologia bovina" Marcelo Cecim - COWMED',
         about: 'Marcelo Cecim possui graduação em Medicina Veterinária pela Universidade Federal de Santa Maria (UFSM, 1985); Mestrado em Produção Animal com ênfase em Etologia pela Escola de Agricultura da Southern Illinois University (SIU, 1989); PhD em Endocrinologia pela Escola de Medicina da Southern Illinois University (1994). É professor de medicina interna de ruminantes na UFSM desde 1996.',
         imageUrl: marcelo_cecim,
     },
@@ -154,12 +156,21 @@ const dates = [
                 id: 3,
                 text: (
                     <>
-                        10:20 horas – <b className="text-black">Marcelo Cecim</b> - A confirmar
+                        10:20 horas – ‘’Sobre vacas e pessoas: Do monitoramento remoto por inteligência artificial à
+                        psicologia bovina’’ <b className="text-black">Marcelo Cecim</b> – COWMED
                     </>
                 ),
                 link: '#speaker-5',
             },
-            { id: 4, text: '11:10 horas - Mesa Redonda' },
+            {
+                id: 4,
+                text: (
+                    <>
+                        11:10 - Mesa Redonda <br /> Mediador - Professor Doutor{' '}
+                        <b className="text-black">Fernando Kuss</b>
+                    </>
+                ),
+            },
             { id: 5, text: '11:40 – Almoço' },
             {
                 id: 6,
@@ -182,7 +193,15 @@ const dates = [
                 ),
                 link: '#speaker-2',
             },
-            { id: 8, text: '15:10 - Mesa Redonda' },
+            {
+                id: 8,
+                text: (
+                    <>
+                        15:10 - Mesa Redonda <br /> Mediador - Professora Doutora{' '}
+                        <b className="text-black">Magali Floriano da Silveira</b>
+                    </>
+                ),
+            },
             { id: 9, text: '15:40 – Milk Break' },
         ],
     },
