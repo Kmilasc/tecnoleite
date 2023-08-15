@@ -141,7 +141,7 @@ const dates = [
         date: 'Dia 22/09',
         events: [
             {
-                id: 12,
+                id: 1,
                 text: (
                     <>
                         09:00 horas – <b className="text-black">Rasiel Restelatto</b>
@@ -149,9 +149,9 @@ const dates = [
                 ),
                 link: '#speaker-',
             },
-            { id: 13, text: '09:50 horas – Milk Break' },
+            { id: 2, text: '09:50 horas – Milk Break' },
             {
-                id: 14,
+                id: 3,
                 text: (
                     <>
                         10:20 horas – <b className="text-black">Marcelo Cecim</b> - A confirmar
@@ -159,10 +159,10 @@ const dates = [
                 ),
                 link: '#speaker-5',
             },
-            { id: 15, text: '11:10 horas - Mesa Redonda' },
-            { id: 16, text: '11:40 – Almoço' },
+            { id: 4, text: '11:10 horas - Mesa Redonda' },
+            { id: 5, text: '11:40 – Almoço' },
             {
-                id: 17,
+                id: 6,
                 text: (
                     <>
                         13:30 - O que devo levar em conta para escolher a tecnologia de geração e uso de Biogás?{' '}
@@ -172,7 +172,7 @@ const dates = [
                 link: '#speaker-4',
             },
             {
-                id: 18,
+                id: 7,
                 text: (
                     <>
                         14:20 horas – Estratégias nutricionais para reduzir a emissão de metano{' '}
@@ -182,8 +182,8 @@ const dates = [
                 ),
                 link: '#speaker-2',
             },
-            { id: 19, text: '15:10 - Mesa Redonda' },
-            { id: 20, text: '15:40 – Milk Break' },
+            { id: 8, text: '15:10 - Mesa Redonda' },
+            { id: 9, text: '15:40 – Milk Break' },
         ],
     },
 ];

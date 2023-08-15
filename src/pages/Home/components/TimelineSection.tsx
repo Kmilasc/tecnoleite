@@ -21,10 +21,9 @@ export function TimelineSection({ dates, lineColor }: Props) {
             </div>
             <div className="flex flex-row gap-x-4 mx-8">
                 <VerticalTimeline lineColor={lineColor}>
-                    {dates.map(({ date, events }) => (
-                        <>
+                    {dates.map(({ date = '', events }) => (
+                        <div key={date}>
                             <VerticalTimelineElement
-                                key={date}
                                 className="vertical-timeline-element--work c2"
                                 date={date}
                                 iconStyle={{
@@ -36,7 +35,7 @@ export function TimelineSection({ dates, lineColor }: Props) {
                             />
                             {events.map(({ id, text, link }) => (
                                 <VerticalTimelineElement
-                                    key={id}
+                                    key={date + id}
                                     className="vertical-timeline-element--work c2"
                                     iconStyle={{
                                         background: lineColor,
@@ -54,7 +53,7 @@ export function TimelineSection({ dates, lineColor }: Props) {
                                     )}
                                 </VerticalTimelineElement>
                             ))}
-                        </>
+                        </div>
                     ))}
                 </VerticalTimeline>
             </div>
