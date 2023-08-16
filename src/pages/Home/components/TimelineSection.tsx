@@ -31,7 +31,7 @@ export function TimelineSection({ dates, lineColor }: Props) {
                                     color: '#fff',
                                 }}
                                 icon={<CalendarIcon />}
-                                contentStyle={{ background: '#fff', padding: 0, marginBottom: 20 }}
+                                contentStyle={{ background: '#fff', padding: 0, marginTop: 80, marginBottom: 30 }}
                             />
                             {events.map(({ id, text, link }) => (
                                 <VerticalTimelineElement
