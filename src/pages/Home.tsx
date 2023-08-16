@@ -36,6 +36,7 @@ import ayrton from '../assets/ayrton.jpeg';
 import luis_gustavo from '../assets/luis_gustavo.jpeg';
 import renne from '../assets/renne.jpeg';
 import marcelo_cecim from '../assets/marcelo_cecim.jpg';
+import rasiel_restelatto from '../assets/rasiel_restelatto.jpg';
 
 const organizers = [
     { text: '', image: pet, url: 'https://www.instagram.com/petproducaoleiteira' },
@@ -100,6 +101,13 @@ const speakers = [
         about: 'Marcelo Cecim possui graduação em Medicina Veterinária pela Universidade Federal de Santa Maria (UFSM, 1985); Mestrado em Produção Animal com ênfase em Etologia pela Escola de Agricultura da Southern Illinois University (SIU, 1989); PhD em Endocrinologia pela Escola de Medicina da Southern Illinois University (1994). É professor de medicina interna de ruminantes na UFSM desde 1996.',
         imageUrl: marcelo_cecim,
     },
+    {
+        id: 6,
+        name: 'Rasiel Restelatto',
+        title: 'Tema a definir',
+        about: 'Bacharel em Zootecnia, possui Mestrado em Produção Animal na área de produção e adubação de forragens e Doutorado na área de concentração de produção e conservação de forragens pela Universidade Tecnológica Federal do Paraná (UTFPR) - Campus Dois Vizinhos. Atualmente é Supervisor comercial de DDGS da Inpasa na região sul do Brasil.',
+        imageUrl: rasiel_restelatto,
+    },
 ];
 
 const dates = [
@@ -149,7 +157,7 @@ const dates = [
                         09:00 horas – <b className="text-black">Rasiel Restelatto</b>
                     </>
                 ),
-                link: '#speaker-',
+                link: '#speaker-6',
             },
             { id: 2, text: '09:50 horas – Milk Break' },
             {
