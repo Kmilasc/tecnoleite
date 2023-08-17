@@ -26,7 +26,6 @@ import zootecnia from '../assets/zootecnia.jpeg';
 import dois_vizinhos from '../assets/dois-vizinhos.png';
 import timac from '../assets/timac.png';
 import itaipu from '../assets/itaipu.png';
-import holandesas from '../assets/holandesas.jpeg';
 import caap from '../assets/caap.jpeg';
 import faep from '../assets/faep.jpeg';
 import inpasa from '../assets/inpasa.jpeg';
@@ -44,7 +43,6 @@ const organizers = [
 ];
 
 const supporters = [
-    { text: '', image: holandesas, url: 'https://canaldoleite.com/' },
     { text: '', image: caap, url: 'https://www.facebook.com/cazap.br/' },
     { text: '', image: faep, url: 'https://www.sistemafaep.org.br/' },
     { text: '', image: canal_do_leite, url: 'https://canaldoleite.com/' },
