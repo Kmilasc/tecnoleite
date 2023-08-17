@@ -7,8 +7,8 @@ import logo from '../../../assets/logo.jpg';
 
 export const navigation = [
     { name: 'Inicio', href: '#event-banner' },
-    { name: 'Sobre', href: '#about-section' },
     { name: 'Programação', href: '#cronogram' },
+    { name: 'Sobre', href: '#about-section' },
     { name: 'Palestrantes', href: '#team' },
     { name: 'Inscrição', href: 'https://www.even3.com.br/tecnoleite-353585/', special: true },
 ];
