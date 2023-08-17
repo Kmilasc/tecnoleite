@@ -114,36 +114,36 @@ const dates = [
     {
         date: 'Dia 21/09',
         events: [
-            { id: 1, text: '7:30 horas - Credenciamento' },
-            { id: 2, text: '8:30 horas – Abertura do evento' },
+            { id: 1, text: '7:30 - Credenciamento' },
+            { id: 2, text: '8:30 – Abertura do evento' },
             {
                 id: 3,
                 text: (
                     <>
-                        9:30 horas - A pecuária 4.0 para melhorar o bem-estar animal, a eficiência econômica e para
-                        trazer competitividade ao produtor familiar, <b className="text-black">Renne Granato</b> –
-                        Cotrijal – RS
+                        9:30 - A pecuária 4.0 para melhorar o bem-estar animal, a eficiência econômica e para trazer
+                        competitividade ao produtor familiar, <b className="text-black">Renne Granato</b> – Cotrijal –
+                        RS
                     </>
                 ),
                 link: '#speaker-1',
             },
-            { id: 4, text: '10:20 horas – Milk break' },
-            { id: 5, text: '10:40 horas – A confirmar' },
-            { id: 6, text: '11:30 horas – Mesa redonda' },
-            { id: 7, text: '12:00 horas – Intervalo para almoço' },
+            { id: 4, text: '10:20 – Milk break' },
+            { id: 5, text: '10:40 – A confirmar' },
+            { id: 6, text: '11:30 – Mesa redonda' },
+            { id: 7, text: '12:00 – Intervalo para almoço' },
             {
                 id: 8,
                 text: (
                     <>
-                        13:30 horas – “Aspectos da vaca ideal, para alta vida produtiva com rentabilidade”{' '}
+                        13:30 – “Aspectos da vaca ideal, para longa vida produtiva com rentabilidade”{' '}
                         <b className="text-black">Altair Antonio Valloto</b> - Associação Paranaense de Criadores de
                         Bovinos da Raça Holandesa
                     </>
                 ),
                 link: '#speaker-3',
             },
-            { id: 9, text: '14:20 horas – A confirmar' },
-            { id: 10, text: '15:10 horas – Mesa Redonda' },
+            { id: 9, text: '14:20 – A confirmar' },
+            { id: 10, text: '15:10 – Mesa Redonda' },
             { id: 11, text: '15:40 – Milk Break' },
         ],
     },
@@ -154,17 +154,17 @@ const dates = [
                 id: 1,
                 text: (
                     <>
-                        09:00 horas – <b className="text-black">Rasiel Restelatto</b>
+                        09:00 – <b className="text-black">Rasiel Restelatto</b>
                     </>
                 ),
                 link: '#speaker-6',
             },
-            { id: 2, text: '09:50 horas – Milk Break' },
+            { id: 2, text: '09:50 – Milk Break' },
             {
                 id: 3,
                 text: (
                     <>
-                        10:20 horas – ‘’Sobre vacas e pessoas: Do monitoramento remoto por inteligência artificial à
+                        10:20 – ‘’Sobre vacas e pessoas: Do monitoramento remoto por inteligência artificial à
                         psicologia bovina’’ <b className="text-black">Marcelo Cecim</b> – COWMED
                     </>
                 ),
@@ -179,7 +179,7 @@ const dates = [
                     </>
                 ),
             },
-            { id: 5, text: '11:40 – Almoço' },
+            { id: 5, text: '12:00 – Intervalo para almoço' },
             {
                 id: 6,
                 text: (
@@ -194,7 +194,7 @@ const dates = [
                 id: 7,
                 text: (
                     <>
-                        14:20 horas – Estratégias nutricionais para reduzir a emissão de metano{' '}
+                        14:20 – Estratégias nutricionais para reduzir a emissão de metano{' '}
                         <b className="text-black">Luis Gustavo Ribeiro Pereira</b> - Pesquisador da Embrapa Gado de
                         Leite
                     </>
@@ -205,7 +205,7 @@ const dates = [
                 id: 8,
                 text: (
                     <>
-                        15:10 - Mesa Redonda <br /> Mediador - Professora Doutora{' '}
+                        15:10 - Mesa Redonda <br /> Mediadora - Professora Doutora{' '}
                         <b className="text-black">Magali Floriano da Silveira</b>
                     </>
                 ),
