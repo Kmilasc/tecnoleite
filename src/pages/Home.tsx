@@ -115,7 +115,7 @@ const dates = [
         date: 'Dia 21/09',
         events: [
             { id: 1, text: '7:30 horas - Credenciamento' },
-            { id: 2, text: '8:30 horas – Mesa de abertura' },
+            { id: 2, text: '8:30 horas – Abertura do evento' },
             {
                 id: 3,
                 text: (
