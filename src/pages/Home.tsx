@@ -36,6 +36,7 @@ import luis_gustavo from '../assets/luis_gustavo.jpeg';
 import renne from '../assets/renne.jpeg';
 import marcelo_cecim from '../assets/marcelo_cecim.jpg';
 import rasiel_restelatto from '../assets/rasiel_restelatto.jpg';
+import ScrollToTopButton from './Home/components/ScrollToTopButton';
 
 const organizers = [
     { text: '', image: pet, url: 'https://www.instagram.com/petproducaoleiteira' },
@@ -241,6 +242,7 @@ export default function Home() {
                         <MapSection />
                     </div>
                 </main>
+                <ScrollToTopButton />
                 <Footer />
             </div>
         </div>
