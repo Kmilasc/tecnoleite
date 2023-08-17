@@ -11,6 +11,7 @@ export function SpeakerPresentation() {
                 <p className="text-sm xs:text-md sm:text-xl text-gray-400">Palestrante 1</p>
             </div>
             <img
+                loading="lazy"
                 src="https://static1.s123-cdn-static-a.com/uploads/2031/400_5a15a9b2d0271.jpg"
                 alt="palestrante"
                 className="w-60 h-60 "

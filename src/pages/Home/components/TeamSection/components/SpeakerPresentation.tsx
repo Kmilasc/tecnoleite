@@ -20,7 +20,7 @@ export function SpeakerPresentation({ id, imageUrl, name, title, about }: Props)
                 onClick={() => setOpenModal('default')}
                 className="flex flex-col items-center gap-y-4 p-8"
             >
-                <img src={imageUrl} alt="palestrante" className="w-60 h-60 rounded-full" />
+                <img loading="lazy" src={imageUrl} alt="palestrante" className="w-60 h-60 rounded-full" />
                 <div className="flex flex-col items-center">
                     <span
                         className="text-md xs:text-xl sm:text-2xl font-conforter text-black font-bold border-spacing-1 border-b-4 "
@@ -37,7 +37,12 @@ export function SpeakerPresentation({ id, imageUrl, name, title, about }: Props)
                 <Modal.Header>{name}</Modal.Header>
                 <Modal.Body className="w-full">
                     <div className="flex flex-col sm:flex-row gap-4">
-                        <img src={imageUrl} alt="palestrante" className="h-40 w-40 flex-1 rounded-full self-center" />
+                        <img
+                            loading="lazy"
+                            src={imageUrl}
+                            alt="palestrante"
+                            className="h-40 w-40 flex-1 rounded-full self-center"
+                        />
                         <div className="flex flex-col gap-y-4">
                             <div className="flex flex-col items-center">
                                 <div className="flex md:min-h-[75px] items-center">
