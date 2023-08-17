@@ -223,8 +223,8 @@ export default function Home() {
                 <header>
                     <EventBanner
                         imageUrl={bgHome}
-                        title="3º Tecnoleite"
-                        subtitle={`Produção de leite com tecnologia e sustentabilidade ${'\n'} 21 e 22 de Setembro`}
+                        title="3º TECNOLEITE"
+                        subtitle={`Produção de Leite com Tecnologia e Sustentabilidade ${'\n'} 21 e 22 de Setembro`}
                     />
                 </header>
                 <main className="w-full flex flex-col px-8 md:px-16 gap-y-8 md:gap-y-32">
