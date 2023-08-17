@@ -21,17 +21,29 @@ export function TimelineSection({ dates, lineColor }: Props) {
             </div>
             <div className="flex flex-row gap-x-4 mx-8">
                 <VerticalTimeline lineColor={lineColor}>
-                    {dates.map(({ date = '', events }) => (
+                    {dates.map(({ date = '', events }, index) => (
                         <div key={date}>
                             <VerticalTimelineElement
                                 className="vertical-timeline-element--work c2"
-                                date={date}
+                                // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+                                // @ts-ignore
+                                date={<span className="font-bold">{date}</span>}
                                 iconStyle={{
                                     background: lineColor,
                                     color: '#fff',
                                 }}
                                 icon={<CalendarIcon />}
-                                contentStyle={{ background: '#fff', padding: 0, marginTop: 80, marginBottom: 30 }}
+                                style={{
+                                    fontWeight: 'bold',
+                                }}
+                                contentStyle={{
+                                    fontWeight: 'bold',
+                                    color: '#308E96',
+                                    background: '#fff',
+                                    padding: 0,
+                                    marginTop: index === 0 ? 0 : 120,
+                                    marginBottom: 60,
+                                }}
                             />
                             {events.map(({ id, text, link }) => (
                                 <VerticalTimelineElement
